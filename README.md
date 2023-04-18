@@ -1,5 +1,9 @@
 # TISATAFL
 
+__save all excel to csv__
+
+
+
 # __Initial Proposal__
 
 General idea: The question/problem are you interested in, the data you need to acquire, the variables you’ll use, and the plan for how you’ll analyze it (what methods you’ll try and why you think they apply to your problem), considerations about how data might impact that.
@@ -40,6 +44,10 @@ Graded on: Data you have, EDA shown and discussed
 
 **To DO**
 - Data
+  - Done by Anna
+    - get code for S&P 500 tickers and GVKEY
+    - make space seperated data
+    - add in sector
   - aquire
     - how did we get the data
   - clean
