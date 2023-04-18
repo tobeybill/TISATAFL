@@ -1,6 +1,6 @@
 # TISATAFL
 
-__Initial Proposal__
+# __Initial Proposal__
 
 General idea: The question/problem are you interested in, the data you need to acquire, the variables you’ll use, and the plan for how you’ll analyze it (what methods you’ll try and why you think they apply to your problem), considerations about how data might impact that.
 
@@ -11,14 +11,14 @@ Graded on: question viability, creativity, finance application, plan sketch, wri
 Instructions for the proposals are here.
 
 
-__Final Proposal__
+# __Final Proposal__
 
 I will provide feedback on your proposals to help you “right size” your goal and avoid some potholes.
 
 Graded on: The improvement from the prior version, how feedback was incorporated, and quality after revisions
 
 
-__Project Status Report__
+# __Project Status Report__
 
 General idea: You’ve now acquired the key data and finished most of the data cleaning.
 
@@ -50,7 +50,7 @@ Graded on: Data you have, EDA shown and discussed
 
 **psuedo code for data file**
 
-__Repot at Submission__
+# __Repot at Submission__
 
 On the due date (listed in the schedule), your repo should be cleaned and polished for publication. That means it should be cleaned of excess and random files, and that folders are sensible (data, temporary, code), the readme helps me/the TA/future visitors explore your repo easily. Your folder structure is up to you and will respond to the nature of your particular project, but I should be able to easily find
 
@@ -90,14 +90,14 @@ Obvious caveats for grading: Form matters, check grammar, and cite work you buil
 
 **psuedo code for analysis file**
 
-__Website Dashboard__
+# __Website Dashboard__
 
 We will talk about this more later.
 
 Obvious caveats for grading: Form matters, check grammar, and cite work you build on. Plagiarism is not acceptable.*
 
 
-__presentation Slides__
+# __presentation Slides__
 
 I’ll discuss scheduling later.
 
