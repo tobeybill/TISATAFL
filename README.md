@@ -38,6 +38,17 @@ shows your exploratory data analysis (EDA) (tables and figures and whatnot, does
 
 Graded on: Data you have, EDA shown and discussed
 
+**To DO**
+- Data
+  - aquire
+    - how did we get the data
+  - clean
+    - summarize how the data is cleaned
+    - summarize what issues were found
+  - EDA and document
+    - include graphics
+
+**psuedo code for data file**
 
 __Repot at Submission__
 
@@ -55,6 +66,29 @@ Graded on: Folder org, read me, code readability/structure
 
 Obvious caveats for grading: Form matters, check grammar, and cite work you build on. Plagiarism is not acceptable.*
 
+**To do**
+- data scraping and cleaning file
+  - done by project status report
+- analysis file
+  - run regression on all data
+  - save in csv
+- report file
+  - hypothesis
+  - Data: tie in data cleaning file (done earlier)
+  - Results:
+    - create graphs from analysis file
+  - conclusion:
+    - these should be easy
+- presentation file
+  - save graphs from report file to jpeg
+  - follow structure of report
+  - convert powerpoint to pdf and link in readme
+- readme
+  - clear, makes sense
+
+**psuedo code for analysis file**
+
+**psuedo code for analysis file**
 
 __Website Dashboard__
 
