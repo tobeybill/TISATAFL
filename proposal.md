@@ -64,16 +64,3 @@ We will transform the raw data through the following preliminary steps:
 - Perform data visualization
 
 Once transformed, we will analyze the data using statistical techniques such as regression analysis, correlation analysis, and descriptive statistics to identify potential correlations between CEO treatment and company stock success. We will also conduct subgroup analyses based on different factors such as CEO age, company industry, etc. 
-
-
-
-
-
-
-
-
-***LAST PART FROM BOWEN
-Examining the link between pay and firm value is complicated. It's an equilibrium outcome in a fragmented and unique labor market. The economics of how incentives need to be designed are continually being revised and adjusted, and this process creates links between firm size and pay. CEOs
-Your "specific question" reads like comp --> firm perf --> value
-Your "hypo" reads like firm perf --> comp
-In your revision, add a section called "Methodology" and list some papers from the lit review above and add snippets about how they might help you set up your test about CEO pay and firm value.
