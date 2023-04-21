@@ -13,11 +13,18 @@ Through this project we plan on analyzing data on CEO treatment and how it affec
 In order to help us have a more defined analysis and conculsion, here are some papers that we are going to keep in mind as we go forward. 
 - https://www.sciencedirect.com/science/article/pii/S0929119905000738?casa_token=GzFuxTXx364AAAAA:rBG1N7rQAqyJXOadR93Q-naHqKBa9PZZBb9RZxvgScRJcAdlMFKfxZp-LGvmz_Z--Pgz32SkUmI
   - This one makes a comment on finding that "...excess compensation (both director and CEO) is associated with firm underperformance."
+  - This paper helps us understand that their are other complexities in the pay strucuture that might have ab effect on firm performance.
+  - This proposal uses Cash and Total Compensation as the dependant variables of the study, firm charactersitics are lagged by one year.
 - https://www.clutejournals.com/index.php/JBER/article/view/2357
-  - predicts there is a direct correlation
+  - Expects there is a direct correlation
+  - Uses company revenue, year-to-year change in net income, and year-to-year change in total shareholder return for company charateristics.
+  - Looking into proxy statements may help us understand the naunces of CEO compensation.
+  - The used 6 variables to measure comp: Base Salary, Cash Bonus, Perks/Other, Stock Awards, Option Awards, and Total Compensation.
 - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1752563
   - This one digs into the background of a CEO and how that affects their performance
   - "Results show a select group of schools educate a large proportion of top CEOs."
+  - University rank is based on how many graduates are CEO's
+  - FORBES publishes a list of ~500 CEO's every year. The list includes company metrics, CEO compensation, and CEO background information.
 We will start with these to start our research and what variables we should take into account. Different backgrounds may possible require different treatment than others. Definitely something we could dig into if there is any data of interest. 
 
 OLD - ***We hypothesize*** that both high compensation and forced turnovers will be positively correlated with a company’s stock price, as higher compensation is usually a result of company overperformance and a forced turnover usually occurs with problematic CEOs.
