@@ -20,7 +20,12 @@ In order to help us have a more defined analysis and conculsion, here are some p
   - "Results show a select group of schools educate a large proportion of top CEOs."
 We will start with these to start our research and what variables we should take into account. Different backgrounds may possible require different treatment than others. Definitely something we could dig into if there is any data of interest. 
 
-***We hypothesize*** that both high compensation and forced turnovers will be positively correlated with a company’s stock price, as higher compensation is usually a result of company overperformance and a forced turnover usually occurs with problematic CEOs.
+OLD - ***We hypothesize*** that both high compensation and forced turnovers will be positively correlated with a company’s stock price, as higher compensation is usually a result of company overperformance and a forced turnover usually occurs with problematic CEOs.
+
+***We hypothesize*** that CEO compensation has a statistically significant correlation to the firms performance in terms of Stock Price. Where CEO's with higher compensatio overperform, and the company performs poorly leading up to a forced turnover.
+compensated CEO's 
+
+
 ---
 
 ### Necessary Data
