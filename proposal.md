@@ -8,7 +8,8 @@ Through this project we plan on analyzing data on CEO treatment and how it affec
 
 ***The specific question*** we are trying to answer is: *Is there a relationship present between the compensation and/or forced turnover of a CEO and the stock price of the companies they lead?*
 
-***Methodology***
+### Methodology
+
 In order to help us have a more defined analysis and conculsion, here are some papers that we are going to keep in mind as we go forward. 
 - https://www.sciencedirect.com/science/article/pii/S0929119905000738?casa_token=GzFuxTXx364AAAAA:rBG1N7rQAqyJXOadR93Q-naHqKBa9PZZBb9RZxvgScRJcAdlMFKfxZp-LGvmz_Z--Pgz32SkUmI
   - This one makes a comment on finding that "...excess compensation (both director and CEO) is associated with firm underperformance."
