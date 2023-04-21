@@ -16,7 +16,7 @@ In order to help us have a more defined analysis and conculsion, here are some p
   - This paper helps us understand that their are other complexities in the pay strucuture that might have ab effect on firm performance.
   - This proposal uses Cash and Total Compensation as the dependant variables of the study, firm charactersitics are lagged by one year.
 - https://www.clutejournals.com/index.php/JBER/article/view/2357
-  - Expects there is a direct correlation
+  - Expects there is a direct correlation.
   - Uses company revenue, year-to-year change in net income, and year-to-year change in total shareholder return for company charateristics.
   - Looking into proxy statements may help us understand the naunces of CEO compensation.
   - The used 6 variables to measure comp: Base Salary, Cash Bonus, Perks/Other, Stock Awards, Option Awards, and Total Compensation.
