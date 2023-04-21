@@ -8,6 +8,9 @@ Through this project we plan on analyzing data on CEO treatment and how it affec
 
 ***The specific question*** we are trying to answer is: *Is there a relationship present between the compensation and/or forced turnover of a CEO and the stock price of the companies they lead?*
 
+***Academic Journals to keep in mind***
+
+
 ***We hypothesize*** that both high compensation and forced turnovers will be positively correlated with a company’s stock price, as higher compensation is usually a result of company overperformance and a forced turnover usually occurs with problematic CEOs.
 
 ---
