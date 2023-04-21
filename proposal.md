@@ -4,11 +4,12 @@
 
 ### Research Question
 
-Through this project we plan on analyzing data on CEO treatment and how it affects the shareholder confidence in the companies these executives lead. The treatment metrics we will be focused on are 1) CEO compensation 2) forced CEO turnover and 3) Other factors not yet discovered. To measure shareholder confidence, we will look at the company’s stock price performance in a given year and/or after a given turnover date. 
+Through this project we plan on analyzing data on CEO treatment and how it affects the shareholder confidence in the companies these executives lead. The treatment metrics we will be focused on are 1) CEO compensation 2) forced CEO turnover and 3) Other factors not yet discovered. To measure shareholder confidence, we will look at the company’s stock price performance in a given year and/or after a given turnover date. We will also conduct a dismissal event study in order to possibly uncover any correlation with firm performance and CEO dismissal (unexpected or not). 
 
 ***The specific question*** we are trying to answer is: *Is there a relationship present between the compensation and/or forced turnover of a CEO and the stock price of the companies they lead?*
 
-***Academic Journals to keep in mind***
+***Methodology***
+In order to help us have a more defined analysis and conculsion, here are some papers that we are going to keep in mind as we go forward. 
 - https://www.sciencedirect.com/science/article/pii/S0929119905000738?casa_token=GzFuxTXx364AAAAA:rBG1N7rQAqyJXOadR93Q-naHqKBa9PZZBb9RZxvgScRJcAdlMFKfxZp-LGvmz_Z--Pgz32SkUmI
   - This one makes a comment on finding that "...excess compensation (both director and CEO) is associated with firm underperformance."
 - https://www.clutejournals.com/index.php/JBER/article/view/2357
@@ -53,9 +54,13 @@ Once transformed, we will analyze the data using statistical techniques such as 
 
 
 
+
+
+
+
+
+***LAST PART FROM BOWEN
 Examining the link between pay and firm value is complicated. It's an equilibrium outcome in a fragmented and unique labor market. The economics of how incentives need to be designed are continually being revised and adjusted, and this process creates links between firm size and pay. CEOs
 Your "specific question" reads like comp --> firm perf --> value
 Your "hypo" reads like firm perf --> comp
 In your revision, add a section called "Methodology" and list some papers from the lit review above and add snippets about how they might help you set up your test about CEO pay and firm value.
-
-And add some info about how you'll do the dismissal event study.
