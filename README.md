@@ -4,6 +4,19 @@ __save all excel to csv__
 
 
 
+# _Updates and Changes_
+
+_New Data: Board of Director Comp_
+Rha's first article takes CEO comp, board of directors comp, and compares them against company performance and ceo identity stuff.
+- CEO and BOD comp is easy to find
+  - we can determine
+    - are CEO and BOD overpaid?
+    - how does them being overpaid affect performance (correlate to stock price)
+- stock data is easier than their company performance variables
+- CEO identify variables had low correlation to perfromance
+  - age, gender, and time spent as CEO had weaker correlations than compensation
+
+
 # __Initial Proposal__
 
 General idea: The question/problem are you interested in, the data you need to acquire, the variables you’ll use, and the plan for how you’ll analyze it (what methods you’ll try and why you think they apply to your problem), considerations about how data might impact that.
@@ -48,13 +61,16 @@ Graded on: Data you have, EDA shown and discussed
     - get code for S&P 500 tickers and GVKEY
     - make space seperated data
     - add in sector
+  - Alex
+    - get BOD comp data (ask rha if this is in the existing data)
   - aquire
-    - how did we get the data
+    - how did we get the data (write up)
   - clean
-    - summarize how the data is cleaned
-    - summarize what issues were found
+    - clean data (coding)
+    - summarize how the data is cleaned (write up)
+    - summarize what issues were found (write up and code)
   - EDA and document
-    - include graphics
+    - include graphics (write up and code)
 
 **psuedo code for data file**
 
