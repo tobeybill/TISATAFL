@@ -6,15 +6,42 @@ __save all excel to csv__
 
 # _Updates and Changes_
 
-_New Data: Board of Director Comp_
-Rha's first article takes CEO comp, board of directors comp, and compares them against company performance and ceo identity stuff.
-- CEO and BOD comp is easy to find
-  - we can determine
-    - are CEO and BOD overpaid?
-    - how does them being overpaid affect performance (correlate to stock price)
-- stock data is easier than their company performance variables
-- CEO identify variables had low correlation to perfromance
-  - age, gender, and time spent as CEO had weaker correlations than compensation
+__Needed Data and it's uses__
+	- CEO Comp
+		○ What variables for CEO comp do we want to look at?
+			§ Source: execucomp
+	- Director Comp
+		○ What variables for Director comp do we want to look at?
+			§ Source: execucomp
+	- Company data
+		○ Company factors that influence CEO/BOD comp
+			§ Do research to find company variables that will contribute to raised or lowered CEO/BOD pay
+				□ Firm size
+				□ Gsector
+				□ Other things like firm performance
+        □ There are a lot of academic articles out there that call these __Determinants__ of CEO Comp
+			§ Check paper that I read (I'll add link in here)
+		○ Variables that impact firm performance
+			§ CEO and BOD overpayment ratio
+        □ ratio is found through the following
+          - fit CEO comp (train data) over the factors that influence their pay
+          - predict their pay (test data) and find high R2 value for a regression model
+          - use model on holdout data to predict expected comp
+          - overpaid if __pay / predicted pay > 1__
+          - __Question:__ if our sample size is the S&P 500, how can we split up the data to get train data, test data, and holdout data?
+			§ Company Controls
+				□ Variables that regularly impact firm performance
+        □ check below for use
+		○ Performance indicator
+			§ Mtb (market to book ratio, multiple definitions online, also called q value) 
+	- Testing if CEO and BOD overpayment affects firm performance
+    ○ Regression with just CEO/BOD overpayment ratio
+      § Run a regression and find the R2 using CEO/BOD overpayment as our X and the MTB as our Y
+    ○ Regression accounting for controls
+      § Run a regression and find the R2 using CEO/BOD overpayment and control variables as our X and the MTB as our Y
+        □ This will tell us if CEO/BOD overpayment really affects firm performance, or if there are a lot of other factors that contribute to underperformance and it does not have a huge affect
+Where is this?![image](https://user-images.githubusercontent.com/60451986/234735820-beb1f2fd-45f9-4135-9a28-f5c9c2bd77dd.png)
+
 
 
 # __Initial Proposal__
