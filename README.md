@@ -14,6 +14,17 @@ https://www.sciencedirect.com/science/article/pii/S0929119917303589#s0010![image
 
 ![image](https://user-images.githubusercontent.com/60451986/234755821-f8b697b7-665e-4492-868e-40b43c5c646e.png)
 
+
+![image](https://user-images.githubusercontent.com/60451986/234976098-c8c55f02-f672-45de-b2ee-a51ec801ea4b.png)
+
+
+link at the top of the image https://www.emerald.com/insight/content/doi/10.1108/JAAR-08-2020-0176/full/html#sec004![image](https://user-images.githubusercontent.com/60451986/234976159-3ae10640-3c8c-46e3-a580-09ae28e38c9b.png)
+
+
+
+link at the bottom of the image https://www.emerald.com/insight/content/doi/10.1108/JAAR-08-2020-0176/full/html#sec004![image](https://user-images.githubusercontent.com/60451986/234976200-cfdd364e-7d0d-4e6f-bbf7-ae010362ad9e.png)
+
+
 # __Initial Proposal__
 
 General idea: The question/problem are you interested in, the data you need to acquire, the variables you’ll use, and the plan for how you’ll analyze it (what methods you’ll try and why you think they apply to your problem), considerations about how data might impact that.
