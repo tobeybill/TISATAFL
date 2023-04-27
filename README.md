@@ -40,7 +40,7 @@ __Needed Data and it's uses__
     ○ Regression accounting for controls
       § Run a regression and find the R2 using CEO/BOD overpayment and control variables as our X and the MTB as our Y
         □ This will tell us if CEO/BOD overpayment really affects firm performance, or if there are a lot of other factors that contribute to underperformance and it does not have a huge affect
-Where is this?![image](https://user-images.githubusercontent.com/60451986/234735820-beb1f2fd-45f9-4135-9a28-f5c9c2bd77dd.png)
+
 
 
 
