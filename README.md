@@ -10,7 +10,9 @@ __Needed Data and it's uses__
 
 ![image](https://user-images.githubusercontent.com/60451986/234738772-d35de719-3860-45bc-ac64-5e9626d31cad.png)
 
+https://www.sciencedirect.com/science/article/pii/S0929119917303589#s0010![image](https://user-images.githubusercontent.com/60451986/234755851-d3bd5a91-10a1-42eb-89e4-16c7a64967fc.png)
 
+![image](https://user-images.githubusercontent.com/60451986/234755821-f8b697b7-665e-4492-868e-40b43c5c646e.png)
 
 # __Initial Proposal__
 
