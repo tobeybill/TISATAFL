@@ -7,7 +7,7 @@ __save all excel to csv__
 # _Updates and Changes_
 
 __Needed Data and it's uses__
-	- CEO Comp
+-	CEO Comp
 		○ What variables for CEO comp do we want to look at?
 			§ Source: execucomp
 	- Director Comp
