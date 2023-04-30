@@ -24,6 +24,9 @@ link at the top of the image https://www.emerald.com/insight/content/doi/10.1108
 
 link at the bottom of the image https://www.emerald.com/insight/content/doi/10.1108/JAAR-08-2020-0176/full/html#sec004![image](https://user-images.githubusercontent.com/60451986/234976200-cfdd364e-7d0d-4e6f-bbf7-ae010362ad9e.png)
 
+![image](https://user-images.githubusercontent.com/60451986/235374561-6c29c8e3-fd68-4316-97b4-26c4af74165d.png)
+
+
 
 # __Initial Proposal__
 
