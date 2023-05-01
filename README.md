@@ -24,6 +24,20 @@ link at the top of the image https://www.emerald.com/insight/content/doi/10.1108
 
 link at the bottom of the image https://www.emerald.com/insight/content/doi/10.1108/JAAR-08-2020-0176/full/html#sec004![image](https://user-images.githubusercontent.com/60451986/234976200-cfdd364e-7d0d-4e6f-bbf7-ae010362ad9e.png)
 
+__Control Variables for firms__
+
+We do not need all 46, grab as many as is convenient and are not repeats. This is from a paper written about Indian Companies but it's close enough.
+
+here's the link for this
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3665334
+
+![image](https://user-images.githubusercontent.com/60451986/235383012-bee5c246-81f9-4ccb-8012-78b03f228773.png)
+
+
+
+![image](https://user-images.githubusercontent.com/60451986/235374611-b8035dfe-3b28-475e-8a0b-7e64198b0a63.png)
+
+
 
 # __Initial Proposal__
 
