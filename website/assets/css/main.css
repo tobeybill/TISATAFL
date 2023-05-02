@@ -2758,7 +2758,7 @@ input, select, textarea {
 				-ms-flex-grow: 1;
 				flex-grow: 1;
 				-ms-flex: 1;
-				padding: 3.75em 3em 3.3em 3em;
+				padding: 2em 3em 2em 3em;
 			}
 
 				.post > header .title h2 {
