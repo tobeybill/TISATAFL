@@ -7,9 +7,9 @@ controlling for firm size and year. The expected value is then compared to the a
 under or over compensation. These variables are used to create for different cases.
 
 1)  CEOs and Directors are both overcompensated.
-2)  CEOs and Directors are both undercompensated.
-3)  CEO is overcompensated and Directors are undercompensated.
-4)  CEO is undercompensated and Directors are overcompensated.
+2)  CEO is overcompensated and Directors are undercompensated.
+3)  CEO is undercompensated and Directors are overcompensated.
+4)  CEOs and Directors are both undercompensated.
 
 These four cases are then correlated to firm performance after accounting for controls.
 
