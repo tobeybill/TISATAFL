@@ -31,7 +31,7 @@ The review written by Sigo explores a wide variety of contributing factors to fi
 
 
 ## Variables
------------
+
 
 ### Director Compensation Variables
 
