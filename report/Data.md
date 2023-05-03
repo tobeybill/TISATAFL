@@ -10,17 +10,12 @@ We cross referenced multiple studies to find determinants of CEO and director co
 Director compensation was derived as their total compensation including cash, value of stock options and option awards, non-equity incentive plan compensation, change in pension value and nonqualified deferred compensation earnings, and all other compensation.
 
 We used accounting based firm valuations and market performance as determinants for predicting Board of Directors
-compensation. The accounting variables are lagged one year, because we are assuming that pay is impacted by 
-previous years performance. The accounting metrics of a firm are resilient to equity market changes. These 
-metrics focus on internal firm performance, which will reduce the impact a strong market position will have on 
-predicted compensation. A strong market artificially inflates firm values, even if the firm is not doing well 
-internally. We included market performance determinants in our analysis because BOD packages usually contain some 
-equity incentive (Dah and Frye).
+compensation. The accounting variables and compensation variables (not including total compensation)are lagged 
+one year, because we are assuming that current total compensation is impacted by previous years performance. The 
+accounting metrics of a firm are resilient to equity market changes. These metrics focus on internal firm performance, which will reduce the impact a strong market position will have on predicted compensation. A strong market artificially inflates firm values, even if the firm is not doing well internally. We included market performance determinants in our analysis because BOD packages usually contain some equity incentive (Dah and Frye).
 
 ### CEO Compensation and Determinants
-CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, 
-Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is the CEO Stock Awards divided by 
-BOD Stock Awards. This variables represent the equity power a CEO holds over a Board of Directors. If a CEO holds more equity than the board, then they hold more power over the company and have a greater influence on the board. We then created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. We predict that CEO's with a higher ownership ratio will have more control over the firm and thus more influence on their pay. For Years Served, we took the difference between the year the CEO was on-boarded and the recorded year. CEO's that serve longer terms are more experienced and are more likley to receive higher pay. We based Prestige Power off of Years Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. This implies a CEO can gain prestige power during their term (Bouteska and Mefteh-Wali)
+The CEO variables where also lagged by one year not including total compensation, we determined past compensation can be used as an indicator for future comp. CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is the CEO Stock Awards divided by BOD Stock Awards. This variables represent the equity power a CEO holds over a Board of Directors. If a CEO holds more equity than the board, then they hold more power over the company and have a greater influence on the board. We then created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. We predict that CEO's with a higher ownership ratio will have more control over the firm and thus more influence on their pay. For Years Served, we took the difference between the year the CEO was on-boarded and the recorded year. CEO's that serve longer terms are more experienced and are more likley to receive higher pay. We based Prestige Power off of Years Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. This implies a CEO can gain prestige power during their term (Bouteska and Mefteh-Wali)
 
 ### Determinants of Firm Performance
 The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability 
@@ -28,15 +23,20 @@ performance, growth performance, market value performance of the firm, customer 
 satisfaction, environmental audit performance, corporate governance performance and social performance. Although 
 this may seem exhaustive, the paper did not actually test any of these variables as controls. For our analysis, 
 we focused on the profitability performance, growth performance, and market value performance due to their 
-availability in the compustate dataset. All of these determinants are later used to predict firm performance.
+availability in the compustat dataset. All of these determinants are later used to predict firm performance.
 
 ### Data Cleaning
 After querying the data from WRDS, we did an Exploratory Data Analysis or EDA on our data frames. Our EDA lead us 
-to dropping unnecessary variable column, imputing data into missing or NaN data fields, and **something_palceholdr**
+to dropping variables deemed unnecessary in our analysis, imputing data into missing or NaN data fields, and creating new variable identifiers. 
+
+The data sets that where queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on 
+
+comprised of many variables that we did 
 
 Out of the two CEO total compensation values, we kept the variable that used the Black Scholes Model to Value the options held by the CEO. 
 
 In our exploratory data analysis (EDA) 
+
 
 -----------
 
