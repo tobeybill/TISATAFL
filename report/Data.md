@@ -15,10 +15,15 @@ internally. We included market performance determinants in our analysis because 
 equity incentive.
 
 ### CEO
-CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, Ownership Power, Year Served, and Prestige determinants. Ownership Ratio is the CEO Stock Awards divided by BOD Stock Awards, this variables represent the equity power a CEO hold over a Board of Directors. We then created a determinant call
+CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, 
+Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is the CEO Stock Awards divided by 
+BOD Stock Awards. This variables represent the equity power a CEO holds over a Board of Directors. We then 
+created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated 
+whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. For Years Served, we took the 
+difference between the year the CEO was on-boarded and the recorded year. We based Prestige Power off of Years 
+Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. 
+This implies a CEO can gain prestige power during their term.
 
-The CEO Ownership Ratio, CEO Ownership Power, Years Served, and Prestige 
-Power.
 
 
 

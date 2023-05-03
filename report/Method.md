@@ -1,6 +1,10 @@
 # The Process:
 
-Prior literature has individually examined the impact of Director compensation and CEO compensation on firm performance, but there are less studies that examine both variables together. Our research uses logistic regression to calculate an expected value for director and CEO compensation through their determinants while controlling for firm size and year. The expected value is then compared to the actual compensation to determine under or over compensation. These variables are used to create for different cases.
+Prior literature has individually examined the impact of Director compensation and CEO compensation on firm 
+performance, but there are less studies that examine both variables together. Our research uses logistic 
+regression to calculate an expected value for director and CEO compensation through their determinants while 
+controlling for firm size and year. The expected value is then compared to the actual compensation to determine 
+under or over compensation. These variables are used to create for different cases.
 
 1)  CEOs and Directors are both overcompensated.
 2)  CEOs and Directors are both undercompensated.
@@ -9,8 +13,9 @@ Prior literature has individually examined the impact of Director compensation a
 
 These four cases are then correlated to firm performance while controlling for determinants of firm performance.
 
-We decided to emit the traditional "Huge" bin and re-binned to three categories so we where left with small, medium, and large firms. 
-Small being from 0 to 10 billion dollars, Medium being from 10 billion to 200 billion, and then Large is 200 billion onwards.  
+We decided to emit the traditional "Huge" bin and re-binned to three categories so we where left with small, 
+medium, and large firms. Small being from 0 to 10 billion dollars, Medium being from 10 billion to 200 billion, 
+and then Large is 200 billion onwards.  
 
 # Methodology
 
