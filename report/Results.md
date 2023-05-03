@@ -29,10 +29,11 @@ Visually, it can be observed that there is a much larger scale for overcompensat
 
 Separating out our various firms in the above four cases, we found that large firms with an underpaid CEO and overpaid BOD perform the best and small firms with underpaid CEO and BOD perform the worst. It is also important to note that, for large firms, overpayment of the CEO results in poor performance while for the other two sizes it improves firm performance. For small firms especially, the overpayment of the CEO very heavily impacts the firm performance. 
 
-## probably another table or just written woods.
+
+## Conclusion
 
 This supports our hypothesis
-1. Both CEOs and directors are overcompensated: Firm performance will suffer in large firms due to backscratching and underperforming executives, but is.
-2. Both CEOs and directors are undercompensated: Firm performance will excel because the firm has strong governance to prevent overcompensation.
-3. The CEO is overcompensated and directors are undercompensated: Firm performance will excel due to a more qualified CEO and strong controls over the board of directors.
-4. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation.
+1. Both CEOs and directors are overcompensated: Firm performance will suffer in large firms due to backscratching and underperforming executives, but is improved for mid-size and small firms.
+2. The CEO is overcompensated and directors are undercompensated: Firm performance will excel in mid-size and small firms due to a more qualified CEO and strong controls over the board of directors, but will be hurt in large firms.
+3. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer in small firms because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation.
+4. Both CEOs and directors are undercompensated: Firm performance will excel in large and mid-size firms because the firm has strong governance to prevent overcompensation, but will suffer for the smaller size firms due to lack of adequate motivation.
