@@ -131,3 +131,22 @@ __Independent Variables (Train Set)__
 -----------
 
 ### Firm Performance Variables
+
+__Dependent Variables (Test Set)__
+- TobinsQ
+
+__Independent Variables (Train Set)__
+- Return on Assets
+- EBITDA Margin
+- Net Income / Revenue
+- Return on Equity
+- Earnings per share
+- Change in stock price
+- Dividend yield
+- Volatility
+- Market value added
+- Asset growth
+- Total revenue growth
+- Net income growth
+- Employee growth
+
