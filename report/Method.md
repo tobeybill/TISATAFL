@@ -13,26 +13,41 @@ These four cases are then correlated to firm performance while controlling for d
 
 ## Director Compensation methodology and variables
 
-### Variables
+### Dependant Variables (Test Set)
+- Total Director Compensation
+- Signature Index
+
+### Independant Variables (Train Set)
+#### Numeric Data
 -Other Compensation
 - Non Equity Incentives
 - Cash Fees
 - Stock Awards
 - Option Awards
-- Total Director Compensation
 - Total Other Compensation
 - Total Non Equity Incentives
-       'noneq_incent', 'cash_fees', 'stock_awards', 'option_awards', 'spcode',
-       'cusip', 'coname', 'year', 'total_director_comp', 'total_othcomp',
-       'total_noneq_incent', 'total_cash_fees', 'total_stock_awards',
-       'total_option_awards', 'mkvalt', 'size_category', 'signature_index',
-       'liquidity', 'net_income', 'num_employees', 'market_value',
-       'debt_to_equity', 'assets_in_place', 'capex_by_assets',
-       'return_on_equity'
-- Comp variables
-- Determinants
+- Total Cash Fees
+- Total Stock Awards
+- Total Option Awards
+- Market Value of the Firm
+- Total Fiscal Market Value
+- Liquidity
+- Net Income
+- Number of Employees
+- Debt to Equity Ratio
+- Assets in Place
+- Capex by Assets
+- Return on Equity
+#### Categorical data
+- Size Category
+       - Tiny
+       - Medium
+       - Big
+
 - Regression while controlling firm size
 
+### Regression Analysis
+       For the Director Compensation analysis we split the firms up by their size category. We decided that smaller firms and larger firms would have different
 Ceo comp:
 - Comp variables
 - Determinants
