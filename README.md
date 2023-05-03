@@ -1,3 +1,23 @@
+# There Is Such A Thing As Free Lunch
+# Final Project - FIN 377
+## Authors
+Rha Overstreet, Alex Romanowski, Tobey Bill, Anna Harvey
+
+## Project Description
+
+## Packages
+```
+
+```
+## Data Service
+    - Wharton Research Data Services
+### Databases
+    - Compustat
+    - Execucomp
+    - Center for Research and Security Price (CRSP)
+
+
+
 # TISATAFL
 
 __save all excel to csv__
