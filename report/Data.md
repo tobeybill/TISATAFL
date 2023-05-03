@@ -8,6 +8,7 @@ We pulled our data from the WRDS Compustat, Execucomp, and CRSP databases.
 - Total Director Compensation
 ### Independent Variables (Train Set)
 #### Numeric Data - Part of the BOD compensation package
+These variables are industry standard for calculating Board of Director compensation and Firm performance.
 - Other Compensation
     - All other non traditional compensations
 - Non Equity Incentives
