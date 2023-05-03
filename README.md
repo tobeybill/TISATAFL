@@ -13,7 +13,10 @@ We are analyzing the relationship between firm performance and CEO/Board of Dire
 4. Determine relationship between above results and firm performance
 
 ## File Directory and Interactions
-
+1. Input_data has all of the uncleaned WRDS data. This includes BOD, CEO, and Firm Data. 
+2. EDA has a mixture of different ipynb files that contributed to the monsterous cleaning. 
+3. Analysis And Regressions folder contains all of our work leading up to the results. 
+4. In results we have our final output pertaining to our hypothesis. 
 
 ## Link to project website
 tobeybill.github.io/TISATAFL/
