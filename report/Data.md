@@ -17,7 +17,7 @@ predicted compensation. A strong market artificially inflates firm values, even 
 internally. We included market performance determinants in our analysis because BOD packages usually contain some 
 equity incentive (Dah and Frye).
 
-### CEO
+### CEO Compensation and Determinants
 CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, 
 Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is the CEO Stock Awards divided by 
 BOD Stock Awards. This variables represent the equity power a CEO holds over a Board of Directors. If a CEO holds more equity than the board, then they hold more power over the company and have a greater influence on the board. We then created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. We predict that CEO's with a higher ownership ratio will have more control over the firm and thus more influence on their pay. For Years Served, we took the difference between the year the CEO was on-boarded and the recorded year. CEO's that serve longer terms are more experienced and are more likley to receive higher pay. We based Prestige Power off of Years Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. This implies a CEO can gain prestige power during their term (Bouteska and Mefteh-Wali)
