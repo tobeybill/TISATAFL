@@ -17,6 +17,7 @@ We are analyzing the relationship between firm performance and CEO/Board of Dire
 2. EDA has a mixture of different ipynb files that contributed to the monsterous cleaning. 
 3. Analysis And Regressions folder contains all of our work leading up to the results. 
 4. In results we have our final output pertaining to our hypothesis. 
+5. Report --> THIS IS OUR REPORT 
 
 ## Link to project website
 tobeybill.github.io/TISATAFL/
