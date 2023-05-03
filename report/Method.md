@@ -15,8 +15,8 @@ These four cases are then correlated to firm performance while controlling for d
 
 ### Regression Analysis
        For the Director Compensation analysis we split the firms up by their size category. We decided that smaller firms and larger firms should be
-       treated differently. Our reasoning was that different firms with higher market/book valuations would skew the data for smaller firms which could 
-       have Board of Director compensation methodologies. After splitting the firms in their repsective bins, we ran a Ridge Regession on our 
+       treated differently. Our reasoning was that different firms with higher market/book valuations would skew the data for smaller firms which 
+       could have Board of Director compensation methodologies. After splitting the firms in their repsective bins, we ran a Ridge Regession on our 
        compensation variables (Independant Variables) against Board of Director total compensation (Dependant variable). In each of our regressions
        we had to optimize our model to fit the data. 
        
