@@ -1,4 +1,4 @@
-## The Process:
+# The Process:
 
 Prior literature has individually examined the impact of Director compensation and CEO compensation on firm performance, but there are less studies that examine both variables together. Our research uses logistic regression to calculate an expected value for director and CEO compensation through their determinants while controlling for firm size and year. The expected value is then compared to the actual compensation to determine under or over compensation. These variables are used to create for different cases.
 
@@ -8,6 +8,8 @@ Prior literature has individually examined the impact of Director compensation a
 4)  CEO is undercompensated and Directors are overcompensated.
 
 These four cases are then correlated to firm performance while controlling for determinants of firm performance.
+
+We decided to emit the traditional "Huge" bin and re-binned to three categories so we where left with small, medium, and large firms. 
 
 # Methodology
 
@@ -25,14 +27,12 @@ Tiny bin size regression parameters:
 - r2 result: 0.472074
 
 Medium bin size regression parameters:
-- Alpha:
-- K value:
-- r2 result:
+- Alpha: 100
+- K value: 95
+- r2 result: 0.618721
 
 Big bin size regression parameters:
-- Alpha:
-- K value:
-- r2 result:
+- r2 result: -0.072973
 
 ### Dependant Variables (Test Set)
 - Total Director Compensation
@@ -74,38 +74,28 @@ their repsective bins, we ran a Ridge Regession on our compensation variables (I
 (Dependant variable). In each of our regressions we had to optimize our model to fit the data. 
 
 Tiny bin size regression parameters:
-- Alpha:
-- K value:
-- r2 result:
+- Alpha: 0.001
+- K value: 96
+- r2 result: 0.731653
 
 Medium bin size regression parameters:
-- Alpha:
-- K value:
-- r2 result:
+- Alpha: 19
+- K value: 96
+- r2 result: 0.68396
 
 Big bin size regression parameters:
-- Alpha:
-- K value:
-- r2 result:
+- Alpha: 663
+- K value: 87
+- r2 result: 0.887327
+
 ### Dependant Variables (Test Set)
 - Total CEO Compensation
 ### Independant Variables (Train Set)
 ### Created Variables
 - ownershipRatio
-       - Ownership Ratio
-              - CEO Stock Awards / BOD Stock Awards
-              - If the ratio is 'inf' (BOD Stock Awards = 0) we replaced it with the highest ratio (406.17953)
-              - If the ratio is 'NaN' (CEO Stock Awards = 0) we replaced it with zero
 - ownershipPower
-       - Ownership Power
-              - 1 if the Ownership Ratio is above the median of the datset 0 otherwise
-              - We used the median to avoid outliers in the ratio overly impacting our anaylisis
 - yearServed
-       - Years Served
-              - This is the amount of time someone served as CEO for a firm 
-- prestiegePower
-       - 1 if the Year Served is above the median of the datset 0 otherwise
-       - We used the median to avoid outliers in the ratio overly impacting our anaylisis
+- prestigePower
 #### Numeric Data
 - CEO Age
 - Stock Awards
