@@ -11,7 +11,7 @@ under or over compensation. These variables are used to create for different cas
 3)  CEO is overcompensated and Directors are undercompensated.
 4)  CEO is undercompensated and Directors are overcompensated.
 
-These four cases are then correlated to firm performance while controlling for determinants of firm performance.
+These four cases are then correlated to firm performance after accounting for controls.
 
 We decided to emit the traditional "Huge" bin and re-binned to three categories so we where left with small, 
 medium, and large firms. Small being from 0 to 10 billion dollars, Medium being from 10 billion to 200 billion, 
