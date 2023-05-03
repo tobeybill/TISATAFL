@@ -19,19 +19,19 @@ These four cases are then correlated to firm performance after accounting for co
 
 ## Regression Analysis for Director and CEO Compensation
 
-The regressions for director and CEO compensation were ran seperatley, but the overarching process is the same.
+The regressions for director and CEO compensation were ran separately, but the overarching process is the same.
 
-Through our research, we learned that firms of different sizes have varrying payout structures to their executives and directors. We split the firms into 3 different size categories to allow for individual treatment during the regressions. Small firms were catagorized with a maximum market cap at $10 billion, followed by medium at $200 billion, and large anything over $200 billion.
+Through our research, we learned that firms of different sizes have varying payout structures to their executives and directors. We split the firms into 3 different size categories to allow for individual treatment during the regressions. Small firms were categorized with a maximum market cap at $10 billion, followed by medium at $200 billion, and large anything over $200 billion.
 
 After splitting the firms in their respective bins, we ran a Ridge Regression 
-on our determinates for compensation (Independent Variables) against director/CEO total compensation (Dependent 
+on our determinants for compensation (Independent Variables) against director/CEO total compensation (Dependent 
 variable). 
 
 We used GridSearchCV to optimized each our models for the alpha and K value. After many iterations, the best_alpha function was used to pick the set of parameters that fit the data the best. 
 
 # add code here!!!!
 
-Despite optimizing, the director model was unable to fit the firms in the "huge" bin within any degree of accuracy. This suggests that different determinates govern director compensation at giant firms. If we were to re-run the analysis, we would do more research to find different determinates. For the time being, we decided to omit the data because no meaningful predications could be made.
+Despite optimizing, the director model was unable to fit the firms in the "huge" bin within any degree of accuracy. This suggests that different determinants govern director compensation at giant firms. If we were to re-run the analysis, we would do more research to find different determinants. For the time being, we decided to omit the data because no meaningful predictions could be made.
  
 
 __Director Results__

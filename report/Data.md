@@ -23,10 +23,20 @@ Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is 
 BOD Stock Awards. This variables represent the equity power a CEO holds over a Board of Directors. If a CEO holds more equity than the board, then they hold more power over the company and have a greater influence on the board. We then created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. We predict that CEO's with a higher ownership ratio will have more control over the firm and thus more influence on their pay. For Years Served, we took the difference between the year the CEO was on-boarded and the recorded year. CEO's that serve longer terms are more experienced and are more likley to receive higher pay. We based Prestige Power off of Years Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. This implies a CEO can gain prestige power during their term (Bouteska and Mefteh-Wali)
 
 ### Determinants of Firm Performance
-The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability performance, growth performance, market value performance of the firm, customer satisfaction, employee satisfaction, environmental audit performance, corporate governance performance and social performance. Although this may seem exhaustive, the paper did not actually test any of these variables as controls. For our analysis, we focused on the profitability performance, growth performance, and market value performance due to their availability in the compustate dataset. All of these determinants are later used to predict firm performance.
+The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability 
+performance, growth performance, market value performance of the firm, customer satisfaction, employee 
+satisfaction, environmental audit performance, corporate governance performance and social performance. Although 
+this may seem exhaustive, the paper did not actually test any of these variables as controls. For our analysis, 
+we focused on the profitability performance, growth performance, and market value performance due to their 
+availability in the compustate dataset. All of these determinants are later used to predict firm performance.
 
 ### Data Cleaning
+After querying the data from WRDS, we did an Exploratory Data Analysis or EDA on our data frames. Our EDA lead us 
+to dropping unnecessary variable column, imputing data into missing or NaN data fields, and **something_palceholdr**
 
+Out of the two CEO total compensation values, we kept the variable that used the Black Scholes Model to Value the options held by the CEO. 
+
+In our exploratory data analysis (EDA) 
 
 -----------
 
