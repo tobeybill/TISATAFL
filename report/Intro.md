@@ -2,7 +2,7 @@
 
 Executive compensation has ballooned over the past 40 years with an increase in pay of 1,167% relative to the growth of the S&P 500 at 741% (Bouteska & Mefteh-Wali). This discrepancy has raised many eyebrows in academia, the public, and media. If executive compensation growth has outweighed the growth of the market are the higher ups really performing better or have they colluded with their governing bodies, the board of directors, to pay themselves an outsized share of the profits? Furthermore, what impact does this have on firm performance?
 
-<img src="main/images/ceo_comp.JPG?raw=true"/>
+<img src="/main/images/ceo_comp.JPG?raw=true"/>
 
 Dah and Frya found that directors were overcompensated more often than not, with their average overcompensation exceeding their average undercompensation, leading to reduced CEO turnover sensitivity and a decrease in CEO pay-for-performance sensitivity (Dah & Frya). This indicates that overpaid directors may be hesitant to remove CEOs for fear of decreasing their own pay. Additionally, overpaid directors may be less likely to dock CEO pay for poor performance in case the CEO retaliates by docking their pay as well.
 
