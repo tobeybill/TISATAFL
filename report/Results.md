@@ -2,10 +2,15 @@
 
 After running the correlations between the overpayment variables and the firm performance score for each case, we found the following results.
 
-## big table here
+## Correlation Tables
 
-As demonstrate by the table ___ is __ and __ is ___.
-We can draw the following conclusions through these findings:
+<img src="/images/corr_ceo.png?raw=true"/>
+
+We found that there was very strong correlation between CEO overpayment and firm performance for small firms, and an equally as strong negative correlation for the larger firms. For those in the mid-size, there wasn't much change. 
+
+<img src="/images/corr_bod.png?raw=true"/>
+
+We found the opposite for directors, that there was very strong correlation between BOD overpayment and firm performance for large firms but a negative correlation for overpayment for the small ones.
 
 ## probably another table or just written woods.
 
