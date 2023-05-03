@@ -35,5 +35,5 @@ Separating out our various firms in the above four cases, we found that large fi
 This supports our hypothesis
 1. Both CEOs and directors are overcompensated: Firm performance will suffer in large firms due to backscratching and underperforming executives, but is improved for mid-size and small firms.
 2. The CEO is overcompensated and directors are undercompensated: Firm performance will excel in mid-size and small firms due to a more qualified CEO and strong controls over the board of directors, but will be hurt in large firms.
-3. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer in small firms because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation.
+3. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer in small firms because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation, but will improve in large and mid-size firms.
 4. Both CEOs and directors are undercompensated: Firm performance will excel in large and mid-size firms because the firm has strong governance to prevent overcompensation, but will suffer for the smaller size firms due to lack of adequate motivation.
