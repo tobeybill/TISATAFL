@@ -15,7 +15,7 @@ one year, because we are assuming that current total compensation is impacted by
 accounting metrics of a firm are resilient to equity market changes. These metrics focus on internal firm performance, which will reduce the impact a strong market position will have on predicted compensation. A strong market artificially inflates firm values, even if the firm is not doing well internally. We included market performance determinants in our analysis because BOD packages usually contain some equity incentive (Dah and Frye).
 
 ### CEO Compensation and Determinants
-The CEO variables where also lagged by one year not including total compensation, we determined past compensation can be used as an indicator for future comp. CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is the CEO Stock Awards divided by BOD Stock Awards. This variables represent the equity power a CEO holds over a Board of Directors. If a CEO holds more equity than the board, then they hold more power over the company and have a greater influence on the board. We then created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. We predict that CEO's with a higher ownership ratio will have more control over the firm and thus more influence on their pay. For Years Served, we took the difference between the year the CEO was on-boarded and the recorded year. CEO's that serve longer terms are more experienced and are more likley to receive higher pay. We based Prestige Power off of Years Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. This implies a CEO can gain prestige power during their term (Bouteska and Mefteh-Wali)
+The CEO variables where also lagged by one year not including total compensation, we determined past compensation can be used as an indicator for future comp. CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is the CEO Stock Awards divided by BOD Stock Awards. This variables represent the equity power a CEO holds over a Board of Directors. If a CEO holds more equity than the board, then they hold more power over the company and have a greater influence on the board. We then created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. We predict that CEO's with a higher ownership ratio will have more control over the firm and thus more influence on their pay. For Years Served, we took the difference between the year the CEO was on-boarded and the recorded year. CEO's that serve longer terms are more experienced and are more likely to receive higher pay. We based Prestige Power off of Years Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. This implies a CEO can gain prestige power during their term (Bouteska and Mefteh-Wali)
 
 ### Determinants of Firm Performance
 The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability 
@@ -26,18 +26,13 @@ we focused on the profitability performance, growth performance, and market valu
 availability in the compustat dataset. All of these determinants are later used to predict firm performance.
 
 ### Exploratory Data Analysis
-After querying the data from WRDS, we did an Exploratory Data Analysis or EDA on our data frames. Our EDA lead us 
-to dropping variables deemed unnecessary in our analysis, imputing data into missing or NaN data fields, and creating new variable identifiers. 
+After querying the data from WRDS, we did an Exploratory Data Analysis or EDA on our data frames. Our EDA leads us to dropping variables deemed unnecessary in our analysis, imputing data into missing or NaN data fields, and creating new variable identifiers. 
 
-The data sets that where queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data we imputed values depending on the 
-variable case. For variables we did not create we imputed missing values with the mean of that market value bin size. 
-Within those data sets 
+The data sets that were queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data we imputed values depending on the 
+variable case. For the variables we did not create, we imputed missing values with that variables mean. The imputed means where done according to market value bins. For Example, the Tiny firms would not be imputed with the Large firms means. We had to normalize the variables we created. Some of the division resulted in NaN and 'inf' values. We understood that the NaN results came from dividing zero and 'inf' was the result of dividing by zero. We imputed the NaN results with zero and capped the 'inf' results to the maximum value of that variable set. 
 
-comprised of many variables that we did 
+Out of the two CEO total compensation values, we kept the variable that used the Black Scholes Model to value the options held by the CEO. (TDC1) 
 
-Out of the two CEO total compensation values, we kept the variable that used the Black Scholes Model to Value the options held by the CEO. 
-
-In our exploratory data analysis (EDA) 
 
 
 -----------
