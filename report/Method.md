@@ -47,9 +47,7 @@ Medium bin size regression parameters:
 - r2 result: 0.618721
 
 Large bin size regression parameters:
-- Alpha=0.0001
-- K value: 79
-- r2 result: 0.227747
+- r2 result: -0.072973
 
 
 __Ceo Results__
@@ -60,14 +58,14 @@ Small bin size regression parameters:
 - r2 result: 0.731653
 
 Medium bin size regression parameters:
-- Alpha: 0.001
-- K value: 86
-- r2 result: 0.285019
+- Alpha: 19
+- K value: 96
+- r2 result: 0.68396
 
 Large bin size regression parameters:
-- Alpha: 555
-- K value: 85
-- r2 result: 0.887814
+- Alpha: 663
+- K value: 87
+- r2 result: 0.887327
 
 ------
 
@@ -81,8 +79,9 @@ Overpayment = Actual Pay / Predicted Pay
 
 ## Firm Performance Score
 
-We needed a measure of performance to determine the effects of compensation on firm performance. Initially, we were going to use Tobin's Q as our measure of performance. However, literature review done by Sigo prompted us to take the analysis one step further. Because the review outlines so many different factors that impact firm performance, we decided to run another regression that fit those determinates to the performance itself.
+We needed a measure of performance to determine the effects of compensation on firm performance. Initially, we were going to use Tobin's Q as our measure of performance. However, literature review done by Sigo prompted us to take the analysis one step further. Because the review outlines so many different factors that impact firm performance, we decided to create our own performance score, predict it on the holdout data, then create an over/underperforming variables based on those predictions.
 
-### Add regression here
+We ran a linear regression to fit the determinants of firm performance to Tobin's Q. We did this because Tobin's Q is often considered an indicator of firm performance. Once the regression was fit, we found the weights of the independent variable coefficients. These weights were standardized by dividing the absolute value of their weight by the sum of the absolute value of all weights. This was saved as our standardized weight variable. The original coefficients were standardized with the standard scalar function. The standardized coefficients and the standardized weights were then multiplied to create a standardized coefficient that was weighted based on it's impact for Tobin's Q. These variables were added together for each firm to create a firm's score.
 
-The regression produced an r2 of ___ . Due to the significant r2 value, we were able to use the model to create a future firm performance score. The score was created by __ . Once the performance score was calculated, we ran a correlation between the performance score and the overpayment variable.
+Once the score is calculated for each firm they were correlated against the over/undercompensating variable. This correlation was graphed for sizes each firm size. Additionally, we calculated the average performance score for each firm size, then created a correlation table between those average scores and the overcompensation variable for each of the four compensation cases.
+
