@@ -12,6 +12,9 @@ We are analyzing the relationship between firm performance and CEO/Board of Dire
 3. Determine if the CEO or BOD is overpaid or underpaid
 4. Determine relationship between above results and firm performance
 
+## File Directory and Interactions
+
+
 ## Link to project website
 tobeybill.github.io/TISATAFL/
 

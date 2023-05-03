@@ -2,13 +2,33 @@
 
 We pulled our data from the WRDS Compustat, Execucomp, and CRSP databases.
 
+These variables are industry standard for calculating Board of Director compensation and Firm performance. 
+Our sample size comprised of firms in the S&P500 from 2010 - 2019. The firms where binned according to market value.
+
+### BOD
+We used accounting based firm valuations and market performance as determinants for predicting Board of Directors
+compensation. The accounting variables are lagged one year, because we are assuming that pay is impacted by 
+previous years performance. The accounting metrics of a firm are resilient to equity market changes. These 
+metrics focus on internal firm performance, which will reduce the impact a strong market position will have on 
+predicted compensation. A strong market artificially inflates firm values, even if the firm is not doing well 
+internally. We included market performance determinants in our analysis because BOD packages usually contain some 
+equity incentive.
+
+### CEO
+CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, Ownership Power, Year Served, and Prestige determinants. Ownership Ratio is the CEO Stock Awards divided by BOD Stock Awards, this variables represent the equity power a CEO hold over a Board of Directors. We then created a determinant call
+
+The CEO Ownership Ratio, CEO Ownership Power, Years Served, and Prestige 
+Power.
+
+
+
+
 -----------
 ## Director Compensation Variables
 ### Dependent Variables (Test Set)
 - Total Director Compensation
 ### Independent Variables (Train Set)
-#### Numeric Data - Part of the BOD compensation package
-These variables are industry standard for calculating Board of Director compensation and Firm performance.
+#### Numeric Data - Part of the BOD compensation package and Firm performance
 - Other Compensation
     - All other non traditional compensations
 - Non Equity Incentives
@@ -67,7 +87,7 @@ These variables are industry standard for calculating Board of Director compensa
       - 1 if the Ownership Ratio is above the median of the data set 0 otherwise
       - We used the median to avoid outliers in the ratio overly impacting our analysis
 - Years Served
-      - This is the amount of time someone served as CEO for a firm 
+      - This is the amount of time the CEO served at the firm 
 - Prestige Power
        - 1 if the Year Served is above the median of the data set 0 otherwise
        - We used the median to avoid outliers in the ratio overly impacting our analysis

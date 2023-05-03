@@ -16,11 +16,12 @@ Small being from 0 to 10 billion dollars, Medium being from 10 billion to 200 bi
 
 ## Director Compensation methodology and variables
 ### Regression Analysis
-For the Director Compensation analysis we split the firms up by their size category. We decided that smaller firms and larger firms should be
-treated differently. Our reasoning was that different firms with higher market/book valuations would skew the data for smaller firms which 
-could have different Board of Director compensation methodologies. After splitting the firms in their respective bins, we ran a Ridge Regression 
-on our compensation variables (Independent Variables) against Board of Director total compensation (Dependent variable). In each of our regressions
-we had to optimize our model to fit the data. 
+For the Director Compensation analysis we split the firms up by their size category. We decided that smaller 
+firms and larger firms should be treated differently. Our reasoning was that different firms with higher 
+market/book valuations would skew the data for smaller firms which could have different Board of Director 
+compensation methodologies. After splitting the firms in their respective bins, we ran a Ridge Regression 
+on our compensation variables (Independent Variables) against Board of Director total compensation (Dependent 
+variable). In each of our regressions we had to optimize our model to fit the data. 
 
 Small bin size regression parameters:
 - Alpha: 118
@@ -67,12 +68,14 @@ Large bin size regression parameters:
        
 ## CEO Compensation methodology and variables
 ### Regression Analysis
-For the CEO Compensation analysis we created new variables to identify how much "Power" a CEO has. We determined four variables to use in our
-analysis. The CEO Ownership Ratio, CEO Ownership Power, Years Served, and Prestige Power. In our regression we split the firms up by their 
-size category. We decided that smaller firms and larger firms should be treated differently. Our reasoning was that different firms with higher
-market/book valuations would skew the data for smaller firms which could have different CEO compensation methodologies. After splitting the firms in
-their respective bins, we ran a Ridge Regression on our compensation variables (Independent Variables) against Board of Director total compensation
-(Dependent variable). In each of our regressions we had to optimize our model to fit the data. 
+For the CEO Compensation analysis we created new variables to identify how much "Power" a CEO has. We determined 
+four variables to use in our analysis. The CEO Ownership Ratio, CEO Ownership Power, Years Served, and Prestige 
+Power. In our regression we split the firms up by their size category. We decided that smaller firms and larger 
+firms should be treated differently. Our reasoning was that different firms with higher market/book valuations 
+would skew the data for smaller firms which could have different CEO compensation methodologies. After splitting 
+the firms in their respective bins, we ran a Ridge Regression on our compensation variables (Independent 
+Variables) against Board of Director total compensation (Dependent variable). In each of our regressions we had 
+to optimize our model to fit the data. 
 
 Small bin size regression parameters:
 - Alpha: 0.001
