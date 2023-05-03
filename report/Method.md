@@ -31,6 +31,7 @@ We used GridSearchCV to optimized each our models for the alpha and K value. Aft
 
 ## Code Snippet
 ''' {python}
+
     numer_pipe = make_pipeline(SimpleImputer(strategy="mean"), StandardScaler())
     cat_pipe = make_pipeline(OneHotEncoder())
 
