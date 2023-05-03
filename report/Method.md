@@ -30,7 +30,7 @@ variable).
 We used GridSearchCV to optimized each our models for the alpha and K value. After many iterations, the best_alpha function was used to pick the set of parameters that fit the data the best. 
 
 ## Code Snippet
-''' 
+''' {python}
 numer_pipe = make_pipeline(SimpleImputer(strategy="mean"), StandardScaler())
 cat_pipe = make_pipeline(OneHotEncoder())
 
