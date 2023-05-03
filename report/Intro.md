@@ -4,7 +4,7 @@ Executive compensation has ballooned over the past 40 years with an increase in 
 
 <img src="/images/ceo_comp.JPG?raw=true"/>
 
-**[CEO Compensation has seen massive growth in recent years](https://www.epi.org/publication/ceo-pay-in-2020/)**
+**[CEO pay has skyrocketed 1,322% since 1978](https://www.epi.org/publication/ceo-pay-in-2020/)**
 
 Dah and Frya found that directors were overcompensated more often than not, with their average overcompensation exceeding their average undercompensation, leading to reduced CEO turnover sensitivity and a decrease in CEO pay-for-performance sensitivity (Dah & Frya). This indicates that overpaid directors may be hesitant to remove CEOs for fear of decreasing their own pay. Additionally, overpaid directors may be less likely to dock CEO pay for poor performance in case the CEO retaliates by docking their pay as well.
 
