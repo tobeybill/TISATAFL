@@ -25,11 +25,12 @@ this may seem exhaustive, the paper did not actually test any of these variables
 we focused on the profitability performance, growth performance, and market value performance due to their 
 availability in the compustat dataset. All of these determinants are later used to predict firm performance.
 
-### Data Cleaning
+### Exploratory Data Analysis
 After querying the data from WRDS, we did an Exploratory Data Analysis or EDA on our data frames. Our EDA lead us 
 to dropping variables deemed unnecessary in our analysis, imputing data into missing or NaN data fields, and creating new variable identifiers. 
 
-The data sets that where queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on 
+The data sets that where queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels, which helps when doing the data analysis. For missing data we imputed values depending on the case. 
+Within those data sets 
 
 comprised of many variables that we did 
 
