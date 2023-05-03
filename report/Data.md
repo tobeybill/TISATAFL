@@ -88,11 +88,12 @@ __Categorical data__
     - Determined by market value of the firm
 -----------
 
-## CEO Compensation Variables
-### Dependent Variables (Test Set)
+### CEO Compensation Variables
+__Dependent Variables (Test Set)__
 - Total CEO Compensation
-### Independent Variables (Train Set)
-### Created Variables
+
+__Independent Variables (Train Set)__
+**Created Variables**
 - Ownership Ratio
       - CEO Stock Awards / BOD Stock Awards
       - If the ratio is 'inf' (BOD Stock Awards = 0) we replaced it with the highest ratio (406.17953)
@@ -105,13 +106,16 @@ __Categorical data__
 - Prestige Power
        - 1 if the Year Served is above the median of the data set 0 otherwise
        - We used the median to avoid outliers in the ratio overly impacting our analysis
-#### Numeric Data
+**Numeric Data**
 - CEO Age
      - How old the CEO was during that year
 - Stock Awards
     - Value of the stock awards given to the CEO
 - Market Value
     - Market value of the firm
-#### Categorical data
+**Categorical data**
 - Size Category
    - Determined by market value of the firm
+-----------
+
+### Firm Performance Variables
