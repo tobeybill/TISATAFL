@@ -13,6 +13,7 @@ under or over compensation. These variables are used to create for different cas
 
 These four cases are then correlated to firm performance after accounting for controls.
 
+----- 
 
 # Methodology
 
@@ -34,6 +35,7 @@ Despite optimizing, the model was unable to fit the firms in the "huge" bin with
  
 
 __Director Results__
+
 Small bin size regression parameters:
 - Alpha: 118
 - K value: 64
@@ -49,6 +51,7 @@ Large bin size regression parameters:
 
 
 __Ceo Results__
+
 Small bin size regression parameters:
 - Alpha: 0.001
 - K value: 96
@@ -64,12 +67,20 @@ Large bin size regression parameters:
 - K value: 87
 - r2 result: 0.887327
 
+------
 
-Over payment:
-- Predict after train
-- Variable creation
-- Case production
+## Overpayment Predictions
 
-Correlation:
-- Control variables
-- Use of over payment
+Once we fit the models to the training data set, we used them to predict compensation for our holdout data. That provided us with a predicted compensation. We used this variable to create an overpayment variable.
+
+Overpayment = Actual Pay / Predicted Pay
+
+-----
+
+## Firm Performance Score
+
+We needed a measure of performance to determine the effects of compensation on firm performance. Initially, we were going to use Tobin's Q as our measure of performance. However, literature review done by Sigo prompted us to take the analysis one step further. Because the review outlines so many different factors that impact firm performance, we decided to run another regression that fit those determinates to the performance itself.
+
+### Add regression here
+
+The regression produced an r2 of ___ . Due to the significant r2 value, we were able to use the model to create a future firm performance score. The score was created by __ . Once the performance score was calculated, we ran a correlation between the performance score and the overpayment variable.
