@@ -11,7 +11,24 @@ These four cases are then correlated to firm performance while controlling for d
 
 # Methodology
 
-Director comp:
+## Director Compensation methodology and variables
+
+### Variables
+-Other Compensation
+- Non Equity Incentives
+- Cash Fees
+- Stock Awards
+- Option Awards
+- Total Director Compensation
+- Total Other Compensation
+- Total Non Equity Incentives
+       'noneq_incent', 'cash_fees', 'stock_awards', 'option_awards', 'spcode',
+       'cusip', 'coname', 'year', 'total_director_comp', 'total_othcomp',
+       'total_noneq_incent', 'total_cash_fees', 'total_stock_awards',
+       'total_option_awards', 'mkvalt', 'size_category', 'signature_index',
+       'liquidity', 'net_income', 'num_employees', 'market_value',
+       'debt_to_equity', 'assets_in_place', 'capex_by_assets',
+       'return_on_equity'
 - Comp variables
 - Determinants
 - Regression while controlling firm size
