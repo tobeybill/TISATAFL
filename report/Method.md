@@ -17,7 +17,7 @@ We decided to emit the traditional "Huge" bin and re-binned to three categories 
 ### Regression Analysis
 For the Director Compensation analysis we split the firms up by their size category. We decided that smaller firms and larger firms should be
 treated differently. Our reasoning was that different firms with higher market/book valuations would skew the data for smaller firms which 
-could have different Board of Director compensation methodologies. After splitting the firms in their repsective bins, we ran a Ridge Regession 
+could have different Board of Director compensation methodologies. After splitting the firms in their respective bins, we ran a Ridge Regression 
 on our compensation variables (Independant Variables) against Board of Director total compensation (Dependant variable). In each of our regressions
 we had to optimize our model to fit the data. 
 
@@ -38,7 +38,7 @@ Big bin size regression parameters:
 - Total Director Compensation
 ### Independant Variables (Train Set)
 #### Numeric Data
--Other Compensation
+- Other Compensation
 - Non Equity Incentives
 - Cash Fees
 - Stock Awards
