@@ -47,7 +47,9 @@ Medium bin size regression parameters:
 - r2 result: 0.618721
 
 Large bin size regression parameters:
-- r2 result: -0.072973
+- Alpha=0.0001
+- K value: 79
+- r2 result: 0.227747
 
 
 __Ceo Results__
@@ -58,14 +60,14 @@ Small bin size regression parameters:
 - r2 result: 0.731653
 
 Medium bin size regression parameters:
-- Alpha: 19
-- K value: 96
-- r2 result: 0.68396
+- Alpha: 0.001
+- K value: 86
+- r2 result: 0.285019
 
 Large bin size regression parameters:
-- Alpha: 663
-- K value: 87
-- r2 result: 0.887327
+- Alpha: 555
+- K value: 85
+- r2 result: 0.887814
 
 ------
 
