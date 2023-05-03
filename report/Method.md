@@ -109,11 +109,11 @@ Large bin size regression parameters:
 
 
 
-Overpayment:
+Over payment:
 - Predict after train
 - Variable creation
 - Case production
 
 Correlation:
 - Control variables
-- Use of overpayment
+- Use of over payment

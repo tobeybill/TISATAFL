@@ -7,7 +7,10 @@ Rha Overstreet, Alex Romanowski, Tobey Bill, Anna Harvey
 We are analyzing the relationship between firm performance and CEO/Board of Director Compensation. Our analysis includes companies from the S&P500, we then separated the firms based on market value. We then ran a Ridge regression to predict firm CEO/BOD over/under compensation. After predicting compensation we determined the relationship between compensation and firm performance. Firm performance was calculated using TobinsQ and a logistic regression to create a firm performance variable.
 
 ## Our Approach
-
+1. Research determinants of CEO and BOD compensation for our regressions
+2. Use selected determinants to predict CEO and BOD Total Compensation
+3. Determine if the CEO or BOD is overpaid or underpaid
+4. Determine relationship between above results and firm performance
 
 ## Link to project website
 tobeybill.github.io/TISATAFL/
