@@ -10,6 +10,7 @@ Prior literature has individually examined the impact of Director compensation a
 These four cases are then correlated to firm performance while controlling for determinants of firm performance.
 
 We decided to emit the traditional "Huge" bin and re-binned to three categories so we where left with small, medium, and large firms. 
+Small being from 0 to 10 billion dollars, Medium being from 10 billion to 200 billion, and then Large is 200 billion onwards.  
 
 # Methodology
 
@@ -21,7 +22,7 @@ could have different Board of Director compensation methodologies. After splitti
 on our compensation variables (Independent Variables) against Board of Director total compensation (Dependent variable). In each of our regressions
 we had to optimize our model to fit the data. 
 
-Tiny bin size regression parameters:
+Small bin size regression parameters:
 - Alpha: 118
 - K value: 64
 - r2 result: 0.472074
@@ -31,7 +32,7 @@ Medium bin size regression parameters:
 - K value: 95
 - r2 result: 0.618721
 
-Big bin size regression parameters:
+Large bin size regression parameters:
 - r2 result: -0.072973
 
 ### Dependent Variables (Test Set)
@@ -73,7 +74,7 @@ market/book valuations would skew the data for smaller firms which could have di
 their respective bins, we ran a Ridge Regression on our compensation variables (Independent Variables) against Board of Director total compensation
 (Dependent variable). In each of our regressions we had to optimize our model to fit the data. 
 
-Tiny bin size regression parameters:
+Small bin size regression parameters:
 - Alpha: 0.001
 - K value: 96
 - r2 result: 0.731653
@@ -83,7 +84,7 @@ Medium bin size regression parameters:
 - K value: 96
 - r2 result: 0.68396
 
-Big bin size regression parameters:
+Large bin size regression parameters:
 - Alpha: 663
 - K value: 87
 - r2 result: 0.887327
