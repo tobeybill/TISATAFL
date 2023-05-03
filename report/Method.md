@@ -29,10 +29,37 @@ variable).
 
 We used GridSearchCV to optimized each our models for the alpha and K value. After many iterations, the best_alpha function was used to pick the set of parameters that fit the data the best. 
 
-# add code here!!!!
+## Code Snippet
+''' python
+numer_pipe = make_pipeline(SimpleImputer(strategy="mean"), StandardScaler())
+cat_pipe = make_pipeline(OneHotEncoder())
+
+preproc_pipe = make_column_transformer(
+    (numer_pipe, make_column_selector(dtype_include=np.number)),
+    (cat_pipe, ['gender']),
+    remainder="drop",
+)
+
+ridge_pipe = Pipeline([
+    ('preprocessor', preproc_pipe),
+    ('ridge', Ridge())
+])
+alphas = list(np.linspace(0, 300, 25))
+parameters = {'ridge__alpha': alphas}
+
+grid_search = GridSearchCV(estimator=ridge_pipe, 
+                           param_grid=parameters,
+                           cv=cv,
+                           scoring='r2',
+                           error_score='raise')
+
+results = grid_search.fit(X_train, y_train)
+'''
+This above code was used to start finding the applicable alpha for each group. 
 
 Despite optimizing, the director model was unable to fit the firms in the "huge" bin within any degree of accuracy. This suggests that different determinants govern director compensation at giant firms. If we were to re-run the analysis, we would do more research to find different determinants. For the time being, we decided to omit the data because no meaningful predictions could be made.
  
+
 
 __Director Results__
 
@@ -47,7 +74,9 @@ Medium bin size regression parameters:
 - r2 result: 0.618721
 
 Large bin size regression parameters:
-- r2 result: -0.072973
+- Alpha=0.0001
+- K value: 79
+- r2 result: 0.227747
 
 
 __Ceo Results__
@@ -58,14 +87,14 @@ Small bin size regression parameters:
 - r2 result: 0.731653
 
 Medium bin size regression parameters:
-- Alpha: 19
-- K value: 96
-- r2 result: 0.68396
+- Alpha: 0.001
+- K value: 86
+- r2 result: 0.285019
 
 Large bin size regression parameters:
-- Alpha: 663
-- K value: 87
-- r2 result: 0.887327
+- Alpha: 555
+- K value: 85
+- r2 result: 0.887814
 
 ------
 
