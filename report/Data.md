@@ -4,9 +4,9 @@ We pulled our data from the WRDS Compustat, Execucomp, and CRSP databases.
 
 -----------
 ## Director Compensation Variables
-### Dependant Variables (Test Set)
+### Dependent Variables (Test Set)
 - Total Director Compensation
-### Independant Variables (Train Set)
+### Independent Variables (Train Set)
 #### Numeric Data - Part of the BOD compensation package
 - Other Compensation
     - All other non traditional compensations
@@ -54,9 +54,9 @@ We pulled our data from the WRDS Compustat, Execucomp, and CRSP databases.
     - Determined by market value of the firm
 -----------
 ## CEO Compensation Variables
-### Dependant Variables (Test Set)
+### Dependent Variables (Test Set)
 - Total CEO Compensation
-### Independant Variables (Train Set)
+### Independent Variables (Train Set)
 ### Created Variables
 - Ownership Ratio
       - CEO Stock Awards / BOD Stock Awards

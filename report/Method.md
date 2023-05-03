@@ -18,7 +18,7 @@ We decided to emit the traditional "Huge" bin and re-binned to three categories 
 For the Director Compensation analysis we split the firms up by their size category. We decided that smaller firms and larger firms should be
 treated differently. Our reasoning was that different firms with higher market/book valuations would skew the data for smaller firms which 
 could have different Board of Director compensation methodologies. After splitting the firms in their respective bins, we ran a Ridge Regression 
-on our compensation variables (Independant Variables) against Board of Director total compensation (Dependant variable). In each of our regressions
+on our compensation variables (Independent Variables) against Board of Director total compensation (Dependent variable). In each of our regressions
 we had to optimize our model to fit the data. 
 
 Tiny bin size regression parameters:
@@ -34,11 +34,11 @@ Medium bin size regression parameters:
 Big bin size regression parameters:
 - r2 result: -0.072973
 
-### Dependant Variables (Test Set)
+### Dependent Variables (Test Set)
 - Total Director Compensation
-### Independant Variables (Train Set)
+### Independent Variables (Train Set)
 #### Numeric Data
-- Other Compensation
+-Other Compensation
 - Non Equity Incentives
 - Cash Fees
 - Stock Awards
@@ -67,11 +67,11 @@ Big bin size regression parameters:
 ## CEO Compensation methodology and variables
 ### Regression Analysis
 For the CEO Compensation analysis we created new variables to identify how much "Power" a CEO has. We determined four variables to use in our
-analysis. The CEO Ownership Ratio, CEO Ownership Power, Years Served, and Prestiege Power. In our regression we split the firms up by their 
+analysis. The CEO Ownership Ratio, CEO Ownership Power, Years Served, and Prestige Power. In our regression we split the firms up by their 
 size category. We decided that smaller firms and larger firms should be treated differently. Our reasoning was that different firms with higher
 market/book valuations would skew the data for smaller firms which could have different CEO compensation methodologies. After splitting the firms in
-their repsective bins, we ran a Ridge Regession on our compensation variables (Independant Variables) against Board of Director total compensation
-(Dependant variable). In each of our regressions we had to optimize our model to fit the data. 
+their respective bins, we ran a Ridge Regression on our compensation variables (Independent Variables) against Board of Director total compensation
+(Dependent variable). In each of our regressions we had to optimize our model to fit the data. 
 
 Tiny bin size regression parameters:
 - Alpha: 0.001
@@ -88,9 +88,9 @@ Big bin size regression parameters:
 - K value: 87
 - r2 result: 0.887327
 
-### Dependant Variables (Test Set)
+### Dependent Variables (Test Set)
 - Total CEO Compensation
-### Independant Variables (Train Set)
+### Independent Variables (Train Set)
 ### Created Variables
 - ownershipRatio
 - ownershipPower
