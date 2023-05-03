@@ -25,6 +25,7 @@ BOD Stock Awards. This variables represent the equity power a CEO holds over a B
 ### Determinants of Firm Performance
 The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability performance, growth performance, market value performance of the firm, customer satisfaction, employee satisfaction, environmental audit performance, corporate governance performance and social performance. Although this may seem exhaustive, the paper did not actually test any of these variables as controls. For our analysis, we focused on the profitability performance, growth performance, and market value performance due to their availability in the compustate dataset. All of these determinants are later used to predict firm performance.
 
+### Data Cleaning
 
 
 -----------
