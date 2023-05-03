@@ -30,30 +30,31 @@ variable).
 We used GridSearchCV to optimized each our models for the alpha and K value. After many iterations, the best_alpha function was used to pick the set of parameters that fit the data the best. 
 
 ## Code Snippet
-''' 
-numer_pipe = make_pipeline(SimpleImputer(strategy="mean"), StandardScaler())
-cat_pipe = make_pipeline(OneHotEncoder())
+''' {python}
 
-preproc_pipe = make_column_transformer(
-    (numer_pipe, make_column_selector(dtype_include=np.number)),
-    (cat_pipe, ['gender']),
-    remainder="drop",
-)
+    numer_pipe = make_pipeline(SimpleImputer(strategy="mean"), StandardScaler())
+    cat_pipe = make_pipeline(OneHotEncoder())
 
-ridge_pipe = Pipeline([
-    ('preprocessor', preproc_pipe),
-    ('ridge', Ridge())
-])
-alphas = list(np.linspace(0, 300, 25))
-parameters = {'ridge__alpha': alphas}
+    preproc_pipe = make_column_transformer(
+        (numer_pipe, make_column_selector(dtype_include=np.number)),
+        (cat_pipe, ['gender']),
+        remainder="drop",
+    )
 
-grid_search = GridSearchCV(estimator=ridge_pipe, 
-                           param_grid=parameters,
-                           cv=cv,
-                           scoring='r2',
-                           error_score='raise')
+    ridge_pipe = Pipeline([
+        ('preprocessor', preproc_pipe),
+        ('ridge', Ridge())
+    ])
+    alphas = list(np.linspace(0, 300, 25))
+    parameters = {'ridge__alpha': alphas}
 
-results = grid_search.fit(X_train, y_train)
+    grid_search = GridSearchCV(estimator=ridge_pipe, 
+                            param_grid=parameters,
+                            cv=cv,
+                            scoring='r2',
+                            error_score='raise')
+
+    results = grid_search.fit(X_train, y_train)
 '''
 This above code was used to start finding the applicable alpha for each group. 
 
