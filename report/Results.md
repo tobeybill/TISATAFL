@@ -12,6 +12,21 @@ We found that there was very strong correlation between CEO overpayment and firm
 
 We found the opposite for directors, that there was very strong correlation between BOD overpayment and firm performance for large firms but a negative correlation for overpayment for the small ones.
 
+
+## Correlation Graphs
+
+<img src="/images/corr_CEO_graph.png?raw=true"/>
+
+<img src="/images/corr_BOD_graph.png?raw=true"/>
+
+Visually, it can be observed that there is a much larger scale for overcompensation on the part of the CEOs, wich an outlier being above 1600% of predicted pay. On the BOD side, a separate outlier sits at roughly 800% of predicted pay. Additionally, it appears that medium-sized firms are most responsible for CEO overpayment wheras smaller firms are more responsible for director overpayment. In both cases, firm performance for larger firms seems to be less volatile than that for the other two size categories.
+
+
+## Case Analysis
+
+
+
+
 ## probably another table or just written woods.
 
 This ___ 's our hyothesis
