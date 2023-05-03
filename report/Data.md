@@ -106,6 +106,8 @@ __Independent Variables (Train Set)__
 - Prestige Power
        - 1 if the Year Served is above the median of the data set 0 otherwise
        - We used the median to avoid outliers in the ratio overly impacting our analysis
+
+
 **Numeric Data**
 - CEO Age
      - How old the CEO was during that year
@@ -113,6 +115,8 @@ __Independent Variables (Train Set)__
     - Value of the stock awards given to the CEO
 - Market Value
     - Market value of the firm
+
+
 **Categorical data**
 - Size Category
    - Determined by market value of the firm
