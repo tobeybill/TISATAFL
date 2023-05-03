@@ -29,7 +29,8 @@ availability in the compustat dataset. All of these determinants are later used 
 After querying the data from WRDS, we did an Exploratory Data Analysis or EDA on our data frames. Our EDA lead us 
 to dropping variables deemed unnecessary in our analysis, imputing data into missing or NaN data fields, and creating new variable identifiers. 
 
-The data sets that where queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels, which helps when doing the data analysis. For missing data we imputed values depending on the case. 
+The data sets that where queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data we imputed values depending on the 
+variable case. For variables we did not create we imputed missing values with the mean of that market value bin size. 
 Within those data sets 
 
 comprised of many variables that we did 
