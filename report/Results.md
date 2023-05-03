@@ -24,13 +24,15 @@ Visually, it can be observed that there is a much larger scale for overcompensat
 
 ## Case Analysis
 
+<img src="/images/cases_desc.png?raw=true"/>
+<img src="/images/avg_perf.png?raw=true"/>
 
-
+Separating out our various firms in the above four cases, we found that large firms with an underpaid CEO and overpaid BOD perform the best and small firms with underpaid CEO and BOD perform the worst. It is also important to note that, for large firms, overpayment of the CEO results in poor performance while for the other two sizes it improves firm performance. For small firms especially, the overpayment of the CEO very heavily impacts the firm performance. 
 
 ## probably another table or just written woods.
 
-This ___ 's our hyothesis
-1. Both CEOs and directors are overcompensated: Firm performance will suffer due to backscratching and underperforming executives.
+This supports our hypothesis
+1. Both CEOs and directors are overcompensated: Firm performance will suffer in large firms due to backscratching and underperforming executives, but is.
 2. Both CEOs and directors are undercompensated: Firm performance will excel because the firm has strong governance to prevent overcompensation.
 3. The CEO is overcompensated and directors are undercompensated: Firm performance will excel due to a more qualified CEO and strong controls over the board of directors.
 4. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation.
