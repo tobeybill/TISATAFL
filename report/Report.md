@@ -205,7 +205,7 @@ variable).
 
 We used GridSearchCV to optimized each our models for the alpha and K value. After many iterations, the best_alpha function was used to pick the set of parameters that fit the data the best. 
 
-## Code Snippet
+**Removed heading**
 
 ''' {python}
 
@@ -282,7 +282,7 @@ Once we fit the models to the training data set, we used them to predict compens
 
 Overpayment = Actual Pay / Predicted Pay
 
-This was done by 
+**This was done by **
 ```{python}
 ```
 
@@ -297,6 +297,7 @@ We ran a linear regression to fit the determinants of firm performance to Tobin'
 Once the score is calculated for each firm they were correlated against the over/undercompensating variable. This correlation was graphed for sizes each firm size. Additionally, we calculated the average performance score for each firm size, then created a correlation table between those average scores and the overcompensation variable for each of the four compensation cases.
 
 ```{python}
+# Insert code here, just the action bits not necessarily the data cleaning
 ```
 
 ---
