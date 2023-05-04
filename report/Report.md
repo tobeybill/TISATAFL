@@ -1,4 +1,4 @@
-# <p style="text-align: center;"> CEO and BOD Compensation and Firm Performance </p>
+# <p style="text-align: center;"> Firm performance relative to CEO and BOD compensation </p>
 
 ## <p style="text-align: center;"> FIN - 377 Final Project Report </p>
 ### <p style="text-align: center;"> Professor: Don Bowen Ph.D </p>
