@@ -6,6 +6,18 @@
 
 ---
 
+## Abstract
+
+This study examines the impact of CEO and Director compensation and firm performance. After conducting regression on a series of determinants to determine if CEOs and directors were overcompensated, four use cases were created with the following hypotheses:
+1. Both CEOs and directors are overcompensated: Firm performance will suffer due to backscratching and underperforming executives.
+2. The CEO is overcompensated and directors are undercompensated: Firm performance will excel due to a more qualified CEO and strong controls over the board of directors.
+3. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation.
+4. Both CEOs and directors are undercompensated: Firm performance will excel because the firm has strong governance to prevent overcompensation.
+
+These hypotheses were correlated with a firm performance variable that was created through regression using a series of control determinants. The study found that large firms, overpayment is negatively correlated with firm performance; small firms, overpayment is positively correlated with firm performance, and the medium firms are right in the middle. There were several sources of error contributing to the many missing variables from the WRDS database for the S&P 500 and we had too few variables to conclude a concrete result. Further analysis should be conducted to explore more variables that are not a part of the WRDS dataset that we could have also used to have a deeper analysis.
+
+---
+
 ## Introduction
 Executive compensation has ballooned over the past 40 years with an increase in pay of 1,167% relative to the growth of the S&P 500 at 741% (Bouteska & Mefteh-Wali). This discrepancy has raised many eyebrows in academia, the public, and media. If executive compensation growth has outweighed the growth of the market are the higher ups really performing better or have they colluded with their governing bodies, the board of directors, to pay themselves an outsized share of the profits? Furthermore, what impact does this have on firm performance?
 
@@ -22,17 +34,7 @@ A paper on the impact of CEO compensation and director compensation on firm perf
 This research prompted us to further explore these relationships and focus on four cases of CEO and director compensation. Through our analysis, we hope to add further evidence of the impact of executive compensation on firm performance.
 
 ---
-## Abstract
 
-This study examines the impact of CEO and Director compensation and firm performance. After conducting regression on a series of determinants to determine if CEOs and directors were overcompensated, four use cases were created with the following hypotheses:
-1. Both CEOs and directors are overcompensated: Firm performance will suffer due to backscratching and underperforming executives.
-2. The CEO is overcompensated and directors are undercompensated: Firm performance will excel due to a more qualified CEO and strong controls over the board of directors.
-3. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation.
-4. Both CEOs and directors are undercompensated: Firm performance will excel because the firm has strong governance to prevent overcompensation.
-
-These hypotheses were correlated with a firm performance variable that was created through regression using a series of control determinants. The study found that large firms, overpayment is negatively correlated with firm performance; small firms, overpayment is positively correlated with firm performance, and the medium firms are right in the middle. There were several sources of error contributing to the many missing variables from the WRDS database for the S&P 500 and we had too few variables to conclude a concrete result. Further analysis should be conducted to explore more variables that are not a part of the WRDS dataset that we could have also used to have a deeper analysis.
-
----
 
 ## Data and Variables
 **We utilized the Wharton Research Data Services for our data sets** All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm specific information came **from Compustat and CRSP.** We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample size comprised of firms in the S&P500 from 2010 - 2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's and the impact of COVID on the market.
