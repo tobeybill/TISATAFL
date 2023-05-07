@@ -43,8 +43,7 @@
 											</div>
 											
 										</header>
-										<p>All of our data was extracted from WRDS. All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm specific information came from Compustat. All stock prices were pulled from CRSP.</p>
-										<p>We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample size comprised of firms in the S&P500 from 2010 - 2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's and the impact of COVID on the market.</p>
+										<p>We utilized the Wharton Research Data Services for our data sets All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm specific information came from Compustat and CRSP. We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample size comprised of firms in the S&P500 from 2010 - 2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's and the impact of COVID on the market.</p>
 										<hr />
 										<div class="title">
 											<h3> BOD Compensation and Determinants </h3>
@@ -92,7 +91,7 @@
 										</ul>
 										<b>Independent Variables (Train Set) Numeric Data - Part of the BOD compensation package and Firm performance</b>
 										<div class="row gtr-uniform">
-											<div class="col-7">
+											<div class="col-6">
 												<ul>
 													<li>Other Compensation: All other non traditional compensations</li>
 													<li>Non Equity Incentives: Incentives plan that does not include equity</li>
@@ -173,24 +172,35 @@
 
 										<div class="title">
 											<h3> Firm Performance Variables: </h3>
-											<ul>
-												<li>Return on Assets</li>
-												<li>EBITDA Margin</li>
-												<li>Net Income / Revenue</li>
-												<li>Return on Equity</li>
-												<li>Earnings per share</li>
-												<li>Change in stock price</li>
-												<li>Dividend yield</li>
-												<li>Volatility</li>
-												<li>Market value added</li>
-												<li>Asset growth</li>
-												<li>Total revenue growth</li>
-												<li>Net income growth</li>
-												<li>Employee growth</li>
-																							
-											</ul>
-											
 										</div>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-3">
+													<ul>
+														<li>Return on Assets</li>
+														<li>EBITDA Margin</li>
+														<li>Net Income / Revenue</li>
+														<li>Return on Equity</li>
+														<li>Earnings per share</li>
+														<li>Change in stock price</li>
+														<li>Dividend yield</li>																					
+													</ul>
+												</div>
+												<div class="col-3">
+													<ul>
+														<li>Volatility</li>
+														<li>Market value added</li>
+														<li>Asset growth</li>
+														<li>Total revenue growth</li>
+														<li>Net income growth</li>
+														<li>Employee growth</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+											
+											
+										
 
 
 
@@ -224,25 +234,120 @@
 										<div class="title">
 											<h3> Method</h3>
 										</div>
+										<p></p>
+										<p></p>
 
 										<div class="title">
-											<h2> Regression Analysis for Director and CEO Compensation </h2>
+											<h4> Regression Analysis for Director and CEO Compensation </h4>
 										</div>
 
 										<p>The regressions for director and CEO compensation were ran seperatley, but the overarching process is the same.</p>
 										<p>Through our research, we learned that firms of different sizes have varrying payout structures to their executives and directors. We split the firms into 3 different size categories to allow for individual treatment during the regressions. Small firms were catagorized with a maximum market cap at $10 billion, followed by medium at $200 billion, and large anything over $200 billion.</p>
 										<p>After splitting the firms in their respective bins, we ran a Ridge Regression on our determinates for compensation (Independent Variables) against director/CEO total compensation (Dependent variable).</p>
 										<p>We used GridSearchCV to optimized each our models for the alpha and K value. After many iterations, the best_alpha function was used to pick the set of parameters that fit the data the best.</p>
-										<code> add code for regression results</code>.
-										<p>Despite optimizing, the director model was unable to fit the firms in the "huge" bin within any degree of accuracy. This suggests that different determinates govern director compensation at giant firms. If we were to re-run the analysis, we would do more research to find different determinates. For the time being, we decided to omit the data because no meaningful predications could be made.</p>
+										<pre> 
+											<code>
+numer_pipe = make_pipeline(SimpleImputer(strategy="mean"), StandardScaler())
+cat_pipe = make_pipeline(OneHotEncoder())
+
+preproc_pipe = make_column_transformer(
+    (numer_pipe, make_column_selector(dtype_include=np.number)),
+    (cat_pipe, ['gender']),
+    remainder="drop",
+)
+
+ridge_pipe = Pipeline([
+    ('preprocessor', preproc_pipe),
+    ('ridge', Ridge())
+])
+alphas = list(np.linspace(0, 300, 25))
+parameters = {'ridge__alpha': alphas}
+
+grid_search = GridSearchCV(estimator=ridge_pipe, 
+                        param_grid=parameters,
+                        cv=cv,
+                        scoring='r2',
+                        error_score='raise')
+
+results = grid_search.fit(X_train, y_train)
+											</code>
+										</pre>
+										<p>This above code was used to start finding the applicable alpha for each group. </p>
+										<p>Despite optimizing our regression, the director model was unable to fit the firms in the "huge" bin within any degree of accuracy. This suggests that different determinants govern director compensation at giant firms. If we were to re-run the analysis, we would do more research to find different determinants. For the time being, we decided to omit the data because no meaningful predictions could be made.</p>
+										<p></p>
 										<div class="row gtr-uniform">
 											<div class="col-6">
-												<b>Director Results</b>
-												<span class="image left"><img src="images/director_res.JPG" alt="" /></span>
+												<h4>Director Results</h4>
+												<p></p>
+													<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>Firm Size</th>
+																	<th>R2</th>
+																	<th>K</th>
+																	<th>Alpha</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Small</td>
+																	<td>0.469471</td>
+																	<td>79</td>
+																	<td>202</td>
+																</tr>
+																<tr>
+																	<td>Medium</td>
+																	<td>0.618721</td>
+																	<td>95</td>
+																	<td>100</td>
+																</tr>
+																<tr>
+																	<td>Large</td>
+																	<td>0.227747</td>
+																	<td>79</td>
+																	<td>0.0001</td>
+																</tr>
+															</tbody>
+															
+														</table>
+													</div>
 											</div>
 											<div class="col-6">
-												<b>CEO Results</b>
-												<span class="image right"><img src="images/ceo_res.JPG" alt="" /></span>
+												<h4>CEO Results</h4>
+												<p></p>
+												<div class="table-wrapper">
+													<table class="alt">
+														<thead>
+															<tr>
+																<th>Firm Size</th>
+																<th>R2</th>
+																<th>K</th>
+																<th>Alpha</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Small</td>
+																<td>0.731653</td>
+																<td>96</td>
+																<td>0.01</td>
+															</tr>
+															<tr>
+																<td>Medium</td>
+																<td>0.68396</td>
+																<td>96</td>
+																<td>19</td>
+															</tr>
+															<tr>
+																<td>Large</td>
+																<td>0.887815</td>
+																<td>85</td>
+																<td>559</td>
+															</tr>
+														</tbody>
+														
+													</table>
 											</div>
 										</div>
 										
