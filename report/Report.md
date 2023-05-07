@@ -240,41 +240,41 @@ This above code was used to start finding the applicable alpha for each group.
 
 Despite optimizing, the director model was unable to fit the firms in the "huge" bin within any degree of accuracy. This suggests that different determinants govern director compensation at giant firms. If we were to re-run the analysis, we would do more research to find different determinants. For the time being, we decided to omit the data because no meaningful predictions could be made.
  
-
-__Director Results__
+__Board of Directors Results__
 
 Small bin size regression parameters:
-- Alpha: 118
-- K value: 64
-- r2 result: 0.472074
+- K=79
+- Alpha=202
+- R2 result: 0.469471
 
 Medium bin size regression parameters:
-- Alpha: 100
-- K value: 95
-- r2 result: 0.618721
+- K=95
+- Alpha=100
+- R2 result: 0.618721
 
 Large bin size regression parameters:
+- K=79
 - Alpha=0.0001
-- K value: 79
-- r2 result: 0.227747
+- R2 result: 0.227747
 
-
-__Ceo Results__
+__CEO results __
 
 Small bin size regression parameters:
-- Alpha: 0.001
-- K value: 96
-- r2 result: 0.731653
+- K =96
+- Alpha=0.01
+- R2 result:0.731653
+
 
 Medium bin size regression parameters:
-- Alpha: 0.001
-- K value: 86
-- r2 result: 0.285019
+- K=96 
+- Alpha=19
+- R2 result: 0.68396
 
-Large bin size regression parameters:
-- Alpha: 555
-- K value: 85
-- r2 result: 0.887814
+Large bin size regression parameters: (to prevent overfitting these variables were omitted for large bin size('total_curr','salary', 'bonus', 
+        'stock_awards', 'option_awards', 'othcomp')
+- K=85
+- Alpha=559
+- R2 result: 0.887815
 
 ------
 
