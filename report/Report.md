@@ -292,15 +292,70 @@ Overpayment = Actual Pay / Predicted Pay
 
 ## Firm Performance Score
 
-We needed a measure of performance to determine the effects of compensation on firm performance. Initially, we were going to use Tobin's Q as our measure of performance. However, literature review done by Sigo prompted us to take the analysis one step further. Because the review outlines so many different factors that impact firm performance, we decided to create our own performance score, predict it on the holdout data, then create an over/underperforming variables based on those predictions.
+We needed a measure of performance to determine the effects of compensation on it. Based on our initial research, we were originally going to use Tobin's Q as our measure, but reviewing *Determinants of Firm Performance: A Subjective Model (Sigo, 2020)* prompted us to take the analysis one step further. Because the review outlines many different factors that impact firm performance, we decided to create our own performance score for each firm in each year and compare that score to the over/underperforming variables we had calculated previously. The process for doing that involved the following:
 
-We ran a linear regression to fit the determinants of firm performance to Tobin's Q. We did this because Tobin's Q is often considered an indicator of firm performance. Once the regression was fit, we found the weights of the independent variable coefficients. These weights were standardized by dividing the absolute value of their weight by the sum of the absolute value of all weights. This was saved as our standardized weight variable. The original coefficients were standardized with the standard scalar function. The standardized coefficients and the standardized weights were then multiplied to create a standardized coefficient that was weighted based on it's impact for Tobin's Q. These variables were added together for each firm to create a firm's score.
-
-Once the score is calculated for each firm they were correlated against the over/undercompensating variable. This correlation was graphed for sizes each firm size. Additionally, we calculated the average performance score for each firm size, then created a correlation table between those average scores and the overcompensation variable for each of the four compensation cases.
+1. Determining relevant measures to firm performance (see firm performance variables above)
+    1. Sigo segmented firm performance measures into 9 categories ranging from Profitability Performance to Social Performance, these categories were then broken down into the various measures that corresponded to them, so we chose those that were contained within the data available to us
+1. Pulled neccessary accounting variables from Compustat Annual Fundamentals dataset
+2. Created methods to calculate the measures from the accounting variables
+3. Created a dataframe that contained each (Firm, Year) and its firm performance measures (calculated by applying the previously-created methods to each firm's accounting variables in that year)
+    4. For measures such as stock price performance and volatility, data was pulled from Yahoo Finance
+5. Assign weights to each of the measures for the overall performance score calculation
+    1. We ran a linear regression to fit the determinants of firm performance to Tobin's Q, often considered an indicator of firm performance
+    2. Once the regression was fit, we utilized the independent variable coefficients of the regression as our weights
+6. Calculate performance score for each (Firm, Year)
+    1. Using `StandardScaler()`, data is standardized by removing the mean and scaling to unit variance
+    2. New values are multiplied by their corresponding weights, then summed by row to determine overall score
 
 ```{python}
-# Insert code here, just the action bits not necessarily the data cleaning
+performance_score = firm_performance
+firm_performance = firm_performance.dropna(subset=['tobinsQ'])
+y = firm_performance.tobinsQ
+firm_performance = firm_performance.drop('tobinsQ',axis=1)
+
+scores_df = firm_performance[['tic', 'fyear']].copy()
+
+firm_performance = firm_performance.drop('fyear',axis=1)
+
+rng = np.random.RandomState(0)
+X_train, X_test, y_train, y_test = train_test_split(firm_performance, y, random_state=rng)
+
+numer_pipe = make_pipeline(SimpleImputer(), 
+                           StandardScaler())
+
+preproc_pipe = ColumnTransformer(
+    [("num_impute", numer_pipe, make_column_selector(dtype_include=np.number)),]
+    , remainder = 'drop'
+)
+
+linear_pipe = make_pipeline(preproc_pipe,
+                           LinearRegression())
+
+results = linear_pipe.fit(X_train, y_train)
+
+coefficients = linear_pipe.named_steps['linearregression'].coef_
+
+coef_df = pd.DataFrame({'metric':X_train.columns[1:],
+                        'weight':coefficients})
+                        
+weights = np.abs(coefficients) / np.sum(np.abs(coefficients))
+
+weight_df = pd.DataFrame({'metric':X_train.columns[1:],
+                        'weight':weights})
+
+weight_dict = weight_df.set_index('metric').T.to_dict('list')
+
+scaler = StandardScaler()
+performance_score = pd.DataFrame(scaler.fit_transform(performance_score.iloc[:, 2:]), columns=performance_score.iloc[:, 2:].columns)
+
+for metric in weight_dict:
+    performance_score[metric] = performance_score[metric] * weight_dict[metric]
+    
+performance_score['Performance Score'] = performance_score.sum(axis=1)
 ```
+Once the score is calculated for each firm in our prediction years they were correlated with the over/undercompensating variable for the same (Firm, Year). The relationship was also graphed for each firm size, both for CEOs and directors.
+
+Lastly, we determined the average performance score present for firms within each case out of those outlined in the abstract. As discussed below, this provided us insight into how firms of each size fared with over and undercompensation of their CEOs and directors.
 
 ---
 ## Results
