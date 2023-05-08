@@ -8,30 +8,43 @@
 
 ## Abstract
 
-This study examines the impact of CEO and Director compensation and firm performance. After conducting regression on a series of determinants to determine if CEOs and directors were overcompensated, four use cases were created with the following hypotheses:
-1. Both CEOs and directors are overcompensated: Firm performance will suffer due to backscratching and underperforming executives.
-2. The CEO is overcompensated and directors are undercompensated: Firm performance will excel due to a more qualified CEO and strong controls over the board of directors.
-3. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation.
-4. Both CEOs and directors are undercompensated: Firm performance will excel because the firm has strong governance to prevent overcompensation.
+This study examines the impact of CEO and Director compensation and firm performance. We conducted a regression analysis on a set of determinants derived from academic literature regarding C-suite and Director compensation. Our four use cases are:
 
-These hypotheses were correlated with a firm performance variable that was created through regression using a series of control determinants. The study found that large firms, overpayment is negatively correlated with firm performance; small firms, overpayment is positively correlated with firm performance, and the medium firms are right in the middle. There were several sources of error contributing to the many missing variables from the WRDS database for the S&P 500 and we had too few variables to conclude a concrete result. Further analysis should be conducted to explore more variables that are not a part of the WRDS dataset that we could have also used to have a deeper analysis.
+1. Both CEOs and directors are overcompensated. Firm performance will suffer due to backscratching and underperforming executives.
+
+2. The CEO is overcompensated and directors are undercompensated. Firm performance will excel due to a more qualified CEO and strong influence over the board of directors.
+
+3. The CEO is undercompensated and directors are overcompensated. Firm performance will suffer because the directors are self-serving and less motivated to replace the CEO in fear of losing their compensation.
+
+4. Both CEOs and directors are undercompensated. Firm performance will excel due to strong firm governance, which prevents overcompensation.
+
+
+
+These cases were correlated with a firm performance variable that we created using the aforementioned determinants. We split our dataset into three bins according to market size. Our study found that large firms have a negative correlation between CEO overcompensation and firm performance. Small firms have a positive correlation between CEO overcompensation and firm performance. Medium firms did not have a correlation between overcompensation and performance. In our study we have determined possible error sources. The datasets gathered from WRDS had missing fields which required either dropping the set or imputing missing variables in our regressions. Further analysis should be done with a larger data set spanning a longer set of years. Note: In this study we used companies listed on the S&P500.
+
 
 ---
 
+
+
 ## Introduction
-Executive compensation has ballooned over the past 40 years with an increase in pay of 1,167% relative to the growth of the S&P 500 at 741% (Bouteska & Mefteh-Wali). This discrepancy has raised many eyebrows in academia, the public, and media. If executive compensation growth has outweighed the growth of the market are the higher ups really performing better or have they colluded with their governing bodies, the board of directors, to pay themselves an outsized share of the profits? Furthermore, what impact does this have on firm performance?
+
+Executive compensation has outperformed public markets in the past 40 years. There has been an increase in compensation of about 1167 points while the relative growth of the S&P 500 has been 741 points (Bouteska & Mefteh-Wali). This disparity has shocked academics, the media, and members of the public. C-suite and Directors keep making more money, even in economic down cycles. From this observation, it can be inferred that there is possible collusion. Is upper management outperforming the market or is their collusion within those governing bodies? The question we aim to answer is: What is the effect of overcompensation on firm performance, taking into account firm size?
 
 <img src="/images/ceo_comp.JPG?raw=true"/>
 
 **[CEO pay has skyrocketed 1,322% since 1978](https://www.epi.org/publication/ceo-pay-in-2020/)**
 
-Dah and Frya found that directors were overcompensated more often than not, with their average overcompensation exceeding their average undercompensation, leading to reduced CEO turnover sensitivity and a decrease in CEO pay-for-performance sensitivity (Dah & Frya). This indicates that overpaid directors may be hesitant to remove CEOs for fear of decreasing their own pay. Additionally, overpaid directors may be less likely to dock CEO pay for poor performance in case the CEO retaliates by docking their pay as well.
+Dah and Frya found that directors are overcompensated more often than not, with their average overcompensation exceeding their average undercompensation, leading to reduced CEO turnover sensitivity and a decrease in CEO pay-for-performance sensitivity (Dah & Frya). This indicates that overpaid directors may be hesitant to remove CEOs to guard against a decrease in their compensation. Additionally, overpaid directors may be reluctant to reduce CEO pay for poor performance. This is most likely due to the CEOs' capability of reducing the Directors' compensation.
 
-Another study touches on the determinants of CEO compensation through 2006-2016. The study found several categories of determinants that impacted compensation: accounting and performance, CEO power, and governance. CEO pay had a higher correlation on firm performance in more mature firms when compared to younger firms. High CEO power over the board led to an increase in compensation, while strong governance led to a decrease in compensation (Bouteska & Mefteh-Wali). 
 
-A paper on the impact of CEO compensation and director compensation on firm performance found a strong positive correlation between CEO and director compensation. The paper also found a relationship between overcompensation and underperformance; concluding that overcompensation is due to poor governance and backscratching (Brick, Palmon, & Wald). 
+Another study touches on the determinants of CEO compensation from 2006 to 2016. The study found several determinants that impacted compensation. These determinants can be found in accounting performance indicators, perceived CEO power, and CEO governance. CEO pay had a higher correlation with mature firms' performance. High CEO power over the board led to an increase in compensation, while strong governance led to a decrease in compensation (Bouteska & Mefteh-Wali). 
 
-This research prompted us to further explore these relationships and focus on four cases of CEO and director compensation. Through our analysis, we hope to add further evidence of the impact of executive compensation on firm performance.
+
+A paper on the impact of CEO compensation and director compensation on firm performance found a strong positive correlation between CEO and director compensation. The paper also found a relationship between overcompensation and underperformance, concluding that overcompensation is due to poor governance and backscratching/collusion (Brick, Palmon, & Wald). 
+
+
+This research prompted us to further explore these relationships and focus on the above-mentioned cases of CEO and director compensation. Through our analysis, we hope to add further evidence towards the study of executive compensation and firm performance.
 
 ---
 

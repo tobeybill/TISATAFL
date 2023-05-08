@@ -4,13 +4,13 @@
 Rha Overstreet, Alex Romanowski, Tobey Bill, Anna Harvey
 
 ## Project Description
-This project analyzes the relationship between firm performance and CEO/Board of Director Compensation. Our analysis includes companies from the S&P 500 separated into size categories based on market value. For each firm, we ran a Ridge regression to predict firm CEO/BOD over/under compensation percentages. After achieving this metric, we calculated a measure of firm performance using the coefficients of a linear regression as weights for each relevant variable. Once both over/under compensation and firm performance had been calculated for the firms in question, the two were correlated, plotted on a scatterplot, and then average firm performance was listed in comparison four cases of over/undercompensation.  
+This project analyzes the relationship between firm performance and CEO/Board of Director Compensation. Our analysis includes companies from the S&P 500 separated into size categories based on market value. For each firm, we ran a Ridge regression to predict firm CEO/BOD over/under compensation percentages. After achieving this metric, we calculated a measure of firm performance using the coefficients of a linear regression as weights for each relevant variable. Once both over/under compensation and firm performance had been calculated for the firms in question, the two were correlated, plotted on a scatterplot, and then average firm performance was listed in comparison with the four cases of over/undercompensation.  
 
 ## Our Approach
 1. Research determinants of CEO and BOD compensation for our regressions
 2. Use selected determinants to predict CEO and BOD Total Compensation
 3. Determine if the CEO or BOD is overpaid or underpaid
-4. Determine relationship between above results and firm performance
+4. Determine the relationship between the above results and firm performance
 
 ## File Directory and Interactions
 **Steps to emulate findings**
