@@ -367,6 +367,15 @@ results = grid_search.fit(X_train, y_train)
 	
 											<p>Once we fit the models to the training data set, we used them to predict compensation for our holdout data. That provided us with a predicted compensation. We used this variable to create an overpayment variable.</p>
 											<p> Overpayment = Actual Pay / Predicted Pay </p>
+											<p>The following code for the CEO payment in small firm sizes was repeated for medium and large firms and all three sizes for director payment</p>
+											<pre>
+												<code>
+small_ceo_df = pd.read_csv('../Saved/small_ceo_df.csv')
+pred_small_ceo_df = pd.read_csv('../Saved/pred_small_ceo_df.csv')
+small_ceo_df['prediction'] = pred_small_ceo_df['prediction']
+small_ceo_df['over_under_comp'] = small_ceo_df['tdc1']/pred_small_ceo_df['prediction']
+												</code>
+											</pre>
 										</div>
 										<p></p>
 
