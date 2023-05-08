@@ -301,7 +301,7 @@ Large bin size regression parameters: (to prevent overfitting these variables we
 
 ## Overpayment Predictions
 
-Once we fit the models to the training data set, we used them to predict compensation for our holdout data. That provided us with a predicted compensation. We used this variable to create an overpayment variable.
+After fitting our models to the training set we predicted compensation on out holdout data. After getting our predicted compensations we created the our overcompensation variable.
 
 Overpayment = Actual Pay / Predicted Pay
 
@@ -317,7 +317,7 @@ small_ceo_df['over_under_comp'] = small_ceo_df['tdc1']/pred_small_ceo_df['predic
 
 ## Firm Performance Score
 
-We needed a measure of performance to determine the effects of compensation on it. Based on our initial research, we were originally going to use Tobin's Q as our measure, but reviewing *Determinants of Firm Performance: A Subjective Model (Sigo, 2020)* prompted us to take the analysis one step further. Because the review outlines many different factors that impact firm performance, we decided to create our own performance score for each firm in each year and compare that score to the over/underperforming variables we had calculated previously. The process for doing that involved the following:
+We needed a measure of performance to determine the effects of compensation on firm performance. Based on our initial research, we were originally going to use Tobin's Q as our measure, but reviewing *Determinants of Firm Performance: A Subjective Model (Sigo, 2020)* prompted us to take the analysis one step further. Because the review outlines many different factors that impact firm performance, we decided to create our own performance score for each firm in each year and compare that score to the performance variables we had calculated previously. The process for doing that involved the following:
 
 1. Determining relevant measures to firm performance (see firm performance variables above)
     1. Sigo segmented firm performance measures into 9 categories ranging from Profitability Performance to Social Performance, these categories were then broken down into the various measures that corresponded to them, so we chose those that were contained within the data available to us
@@ -378,9 +378,9 @@ for metric in weight_dict:
     
 performance_score['Performance Score'] = performance_score.sum(axis=1)
 ```
-Once the score is calculated for each firm in our prediction years they were correlated with the over/undercompensating variable for the same (Firm, Year). The relationship was also graphed for each firm size, both for CEOs and directors.
+We correlated the compensation variables with each calculated score for the same firm and year. The relationship was graphed for each of the size bins for both CEOs and Directors.
 
-Lastly, we determined the average performance score present for firms within each case out of those outlined in the abstract. As discussed below, this provided us insight into how firms of each size fared with over and undercompensation of their CEOs and directors.
+Our final step was determining the average performance score for each firm used in our analysis, firms listed on the S&P 500 from 2010 to 2019. We can now gain insight on how firms of different sizes performed with over and under compensated executive management.
 
 ```{python}
 def assignCase(df):
@@ -405,7 +405,7 @@ combined_avg_perf = combined_avg_perf.rename(columns={'Performance_Score':'avg_p
 ---
 ## Results
 
-After running the correlations between the overpayment variables and the firm performance score for each case, we found the following results.
+After running the correlations between the compensation variables and the firm performance score for each case, we found the following results.
 
 ### Correlation Tables
 
@@ -415,7 +415,7 @@ After running the correlations between the overpayment variables and the firm pe
 | Medium  | 0.005446  |
 | Large   | -0.226134 |
 
-We found that there was very strong correlation between CEO overpayment and firm performance for small firms, and an equally as strong negative correlation for the larger firms. For those in the mid-size, there wasn't much change. 
+There is a very strong correlation between CEO overpayment and firm performance for small firms, and an equally as strong negative correlation for the larger firms. For those in the mid-size, there wasn't much change. 
 
 |Firm Size|Correlation|
 |---------|-----------|
@@ -423,7 +423,7 @@ We found that there was very strong correlation between CEO overpayment and firm
 | Medium  | -0.026329 |
 | Large   | 0.131093  |
 
-We found the opposite for directors, that there was very strong correlation between BOD overpayment and firm performance for large firms but a negative correlation for overpayment for the small ones.
+We found the opposite for directors. There is a very strong correlation between BOD overpayment and firm performance for large firms but a negative correlation for overpayment for the small ones.
 
 
 ### Correlation Graphs
@@ -467,13 +467,18 @@ Separating out our various firms in the above four cases, we found that large fi
 
 ## Conclusion
 
-Since the mid 20th century, CEO and director compensation has has ballooned and caught the attention of many. The drastic increase in CEO compensation has often called its legitimacy into question. Does paying the higherups oversized saleries really make an impact? We've found that, in certain cases, it does.
+Executive management compensation has been inflating at a rate not reflected in worker salaries, traditional firm performance, and firm market performance. The drastic increase in executive compensation has often called the legitimacy of the impact these positions have on firm performance into question. Does paying executive management abnormally large salaries really make an impact? Through our study we have found that, in certain cases, there is a significant impact.
+
 
 Our results have supported our hypothesis in the following ways.
-1. Both CEOs and directors are overcompensated: Firm performance will suffer in large firms due to backscratching and underperforming executives, but is improved for mid-size and small firms.
-2. The CEO is overcompensated and directors are undercompensated: Firm performance will excel in mid-size and small firms due to a more qualified CEO and strong controls over the board of directors, but will be hurt in large firms.
-3. The CEO is undercompensated and directors are overcompensated: Firm performance will suffer in small firms because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation, but will improve in large and mid-size firms.
-4. Both CEOs and directors are undercompensated: Firm performance will excel in large and mid-size firms because the firm has strong governance to prevent overcompensation, but will suffer for the smaller size firms due to lack of adequate motivation.
+
+1. Both CEOs and directors are overcompensated. Firm performance will suffer in large firms due to backscratching and underperforming executives, although performance is improved for mid-size and small firms.
+
+2. The CEO is overcompensated and directors are undercompensated. Firm performance will excel in mid-size and small firms due to a more qualified CEO and strong control over the board of directors, but will be hurt in large firms.
+
+3. The CEO is undercompensated and directors are overcompensated. Firm performance will suffer in small firms because the directors are self-serving and less motivated to replace the CEO in fear of losing their compensation. Performance improves in large and mid-size firms.
+
+4. Both CEOs and directors are undercompensated. Firm performance will excel in large and mid-size firms because the firm has strong governance to prevent overcompensation, but will suffer for the smaller-sized firms due to lack of adequate motivation.
 
 --- 
 ## Citations
