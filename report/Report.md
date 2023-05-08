@@ -296,10 +296,10 @@ We needed a measure of performance to determine the effects of compensation on i
 
 1. Determining relevant measures to firm performance (see firm performance variables above)
     1. Sigo segmented firm performance measures into 9 categories ranging from Profitability Performance to Social Performance, these categories were then broken down into the various measures that corresponded to them, so we chose those that were contained within the data available to us
-1. Pulled neccessary accounting variables from Compustat Annual Fundamentals dataset
-2. Created methods to calculate the measures from the accounting variables
-3. Created a dataframe that contained each (Firm, Year) and its firm performance measures (calculated by applying the previously-created methods to each firm's accounting variables in that year)
-    4. For measures such as stock price performance and volatility, data was pulled from Yahoo Finance
+2. Pulled neccessary accounting variables from Compustat Annual Fundamentals dataset
+3. Created methods to calculate the measures from the accounting variables
+4. Created a dataframe that contained each (Firm, Year) and its firm performance measures (calculated by applying the previously-created methods to each firm's accounting variables in that year)
+    1. For measures such as stock price performance and volatility, data was pulled from Yahoo Finance
 5. Assign weights to each of the measures for the overall performance score calculation
     1. We ran a linear regression to fit the determinants of firm performance to Tobin's Q, often considered an indicator of firm performance
     2. Once the regression was fit, we utilized the independent variable coefficients of the regression as our weights
