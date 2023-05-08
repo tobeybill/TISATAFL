@@ -209,7 +209,7 @@ We used GridSearchCV to optimized each our models for the alpha and K value. Aft
 
 **Removed heading**
 
-''' {python}
+```{python}
 
     numer_pipe = make_pipeline(SimpleImputer(strategy="mean"), StandardScaler())
     cat_pipe = make_pipeline(OneHotEncoder())
@@ -234,7 +234,7 @@ We used GridSearchCV to optimized each our models for the alpha and K value. Aft
                             error_score='raise')
 
     results = grid_search.fit(X_train, y_train)
-'''
+```
 
 This above code was used to start finding the applicable alpha for each group. 
 
@@ -360,6 +360,26 @@ performance_score['Performance Score'] = performance_score.sum(axis=1)
 Once the score is calculated for each firm in our prediction years they were correlated with the over/undercompensating variable for the same (Firm, Year). The relationship was also graphed for each firm size, both for CEOs and directors.
 
 Lastly, we determined the average performance score present for firms within each case out of those outlined in the abstract. As discussed below, this provided us insight into how firms of each size fared with over and undercompensation of their CEOs and directors.
+
+```{python}
+def assignCase(df):
+    df = df.dropna()
+    cases = [
+        (df['over_under_ceo'] >= 1) & (df['over_under_bod'] >= 1), # Case 1
+        (df['over_under_ceo'] >= 1) & (df['over_under_bod'] <= 1), # Case 2
+        (df['over_under_ceo'] <= 1) & (df['over_under_bod'] >= 1), # Case 3
+        (df['over_under_ceo'] <= 1) & (df['over_under_bod'] <= 1) # Case 4
+    ]
+    names = ['Case 1', 'Case 2', 'Case 3', 'Case 4']
+    df['Case'] = np.select(cases, names, default = np.nan)
+    return df
+    
+combined_bod_ceo = pd.concat([small_bod_ceo, med_bod_ceo, large_bod_ceo], axis=0)
+combined_bod_ceo = assignCase(combined_bod_ceo)
+
+combined_avg_perf = combined_bod_ceo.groupby(['Firm Size', 'Case']).agg({'Performance_Score': 'mean', 'Case': 'size'})
+combined_avg_perf = combined_avg_perf.rename(columns={'Performance_Score':'avg_perf_score','Case':'count'})
+```
 
 ---
 ## Results
