@@ -50,34 +50,38 @@ This research prompted us to further explore these relationships and focus on th
 
 
 ## Data and Variables
-**We utilized the Wharton Research Data Services for our data sets** All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm specific information came **from Compustat and CRSP.** We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample size comprised of firms in the S&P500 from 2010 - 2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's and the impact of COVID on the market.
+**We utilized the Wharton Research Data Services for our data sets** All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm specific information came **from Compustat.** We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample size comprised of firms in the S&P500 from 2010 - 2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's and the impact COVID-19 had on the market.
 
 ### BOD Compensation and Determinants
-Director compensation was derived as their total compensation including cash, value of stock options and option awards, non-equity incentive plan compensation, change in pension value and nonqualified deferred compensation earnings, and all other compensation.
+Director compensation was derived as their total compensation. Including cash, value of stock options and option awards, non-equity incentive plan compensation, change in pension value and "nonqualified" deferred compensation earnings, and all other compensations.
 
-We used accounting based firm valuations and market performance as determinants for predicting Board of Directors
-compensation. The accounting variables and compensation variables (not including total compensation)are lagged 
-one year, because we are assuming that current total compensation is impacted by previous years performance. The 
-accounting metrics of a firm are resilient to equity market changes. These metrics focus on internal firm performance, which will reduce the impact a strong market position will have on predicted compensation. A strong market artificially inflates firm values, even if the firm is not doing well internally. We included market performance determinants in our analysis because BOD packages usually contain some equity incentive (Dah and Frye).
+We used accounting based firm valuations and market performance as determinants for predicting Board of Directors compensation. The accounting variables and compensation variables (not including total compensation) are lagged by one year.  We are assuming that current total compensation is impacted by previous years' performance. The accounting metrics of a firm are resilient to equity market changes. These metrics focus on internal firm performance, which will reduce the impact a strong market position will have on predicted compensation. A strong market artificially inflates firm values, even if the firm is not doing well internally. We included market performance determinants in our analysis because BOD packages usually contain some equity incentives (Dah and Frye).
+
+
 
 ### CEO Compensation and Determinants
-The CEO variables where also lagged by one year not including total compensation, we determined past compensation can be used as an indicator for future comp. CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is the CEO Stock Awards divided by BOD Stock Awards. This variables represent the equity power a CEO holds over a Board of Directors. If a CEO holds more equity than the board, then they hold more power over the company and have a greater influence on the board. We then created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. We predict that CEO's with a higher ownership ratio will have more control over the firm and thus more influence on their pay. For Years Served, we took the difference between the year the CEO was on-boarded and the recorded year. CEO's that serve longer terms are more experienced and are more likely to receive higher pay. We based Prestige Power off of Years Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. This implies a CEO can gain prestige power during their term (Bouteska and Mefteh-Wali)
+
+The CEO variables were also lagged by one year, not including total compensation. We determined past compensation can be used as an indicator for future compensation. CEO determinants are a combination of created variables and stock awards. We created an Ownership Ratio, Ownership Power, Year Served, and Prestige determinants. The Ownership Ratio is the CEO Stock Awards divided by BOD Stock Awards. These variables represent the equity power a CEO holds over a Board of Directors. If a CEO holds more equity than the board, then they hold more power over the company and have a greater influence on the board. We then created a determinant called Ownership Power. This is a binary categorical variable. This variable indicated whether the CEO Ownership Ratio was above the CEO Ownership Ratio median. We predict that CEOs with a higher ownership ratio will have more control over the firm and thus more influence on their pay. For Years Served, we took the difference between the year the CEO was on-boarded and the recorded year. CEOs that serve longer terms are more experienced and are more likely to receive higher pay. We based Prestige Power off of Years Served. Prestige power is a binary categorical variable that indicates whether time served is above the median. This implies a CEO can gain prestige power during their term (Bouteska and Mefteh-Wali)
+
+
 
 ### Determinants of Firm Performance
-The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability 
-performance, growth performance, market value performance of the firm, customer satisfaction, employee 
-satisfaction, environmental audit performance, corporate governance performance and social performance. Although 
-this may seem exhaustive, the paper did not actually test any of these variables as controls. For our analysis, 
-we focused on the profitability performance, growth performance, and market value performance due to their 
-availability in the compustat dataset. All of these determinants are later used to predict firm performance.
+
+The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability performance, growth performance, market value performance of the firm, customer satisfaction, employee satisfaction, environmental audit performance, corporate governance performance and social performance. Although this may seem exhaustive, the paper did not actually test any of these variables as controls. For our analysis, we focused on the profitability performance, growth performance, and market value performance due to their availability in the compustat dataset. All of these determinants are later used to predict firm performance.
+
+
 
 ### Exploratory Data Analysis
+
 After querying the data from WRDS, we did an Exploratory Data Analysis or EDA on our data frames. Our EDA leads us to dropping variables deemed unnecessary in our analysis, imputing data into missing or NaN data fields, and creating new variable identifiers. 
 
-The data sets that were queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data we imputed values depending on the 
-variable case. For the variables we did not create, we imputed missing values with that variables mean. The imputed means where done according to market value bins. For Example, the Tiny firms would not be imputed with the Large firms means. We had to normalize the variables we created. Some of the division resulted in NaN and 'inf' values. We understood that the NaN results came from dividing zero and 'inf' was the result of dividing by zero. We imputed the NaN results with zero and capped the 'inf' results to the maximum value of that variable set. 
 
-Out of the two CEO total compensation values, we kept the variable that used the Black Scholes Model to value the options held by the CEO. (TDC1) 
+
+The data sets that were queried from WRDS were very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data, we imputed values depending on the variable case. For the variables we did not create, we imputed missing values with that variables mean. The imputed means were done according to market value bins. For example, the Tiny firms would not be imputed with the Large firms means. We had to normalize the variables we created. Some of the divisions resulted in NaN and 'inf' values. We understood that the NaN results came from dividing zero and 'inf' was the result of dividing by zero. We imputed the NaN results to zero and capped the 'inf' results to the maximum value of that variable set. 
+
+
+
+Out of the two CEO total compensation values, we kept the variable that used the Black Scholes Model to value the options held by the CEO (TDC1).
 
 
 
@@ -192,33 +196,38 @@ __Independent Variables (Train Set)__
 
 ---
 ## Process
-Prior literature has individually examined the impact of Director compensation and CEO compensation on firm 
-performance, but there are less studies that examine both variables together. Our research uses logistic 
-regression to calculate an expected value for director and CEO compensation through their determinants while 
-controlling for firm size and year. The expected value is then compared to the actual compensation to determine 
-under or over compensation. These variables are used to create for different cases.
+
+A majority of the prior research on executive compensation and firm performance has either been CEO or Director compensation. They are not usually studied in tandem. Our research uses a Ridge model to calculate an expected value for director and CEO compensation through their determinants while controlling for firm size and year. The expected value is then compared to the actual compensation to determine under or over compensation. In our four performance analyses, we correlate them to firm performance after accounting for the control variables we created.
+
+
+
+Four cases
 
 1)  CEOs and Directors are both overcompensated.
+
 2)  CEO is overcompensated and Directors are undercompensated.
+
 3)  CEO is undercompensated and Directors are overcompensated.
+
 4)  CEOs and Directors are both undercompensated.
 
-These four cases are then correlated to firm performance after accounting for controls.
+
 
 ---
+
 ## Methodology
+
+
 
 ### Regression Analysis for Director and CEO Compensation
 
-The regressions for director and CEO compensation were ran separately, but the overarching process is the same.
 
-Through our research, we learned that firms of different sizes have varying payout structures to their executives and directors. We split the firms into 3 different size categories to allow for individual treatment during the regressions. Small firms were categorized with a maximum market cap at $10 billion, followed by medium at $200 billion, and large anything over $200 billion.
 
-After splitting the firms in their respective bins, we ran a Ridge Regression 
-on our determinants for compensation (Independent Variables) against director/CEO total compensation (Dependent 
-variable). 
+The regressions for director and CEO compensation were run separately, but the overarching process is the same. We used SciKit Learn libraries to create our data pipelines and optimize our hyper-parameters.​
 
-We used GridSearchCV to optimized each our models for the alpha and K value. After many iterations, the best_alpha function was used to pick the set of parameters that fit the data the best. 
+
+
+Through our research, we learned that firms of different sizes have varying payout structures for their executives and directors. We split the firms into 3 different size categories to allow for individual treatment during the regressions. Small firms were categorized with a maximum market cap at $10 billion, followed by medium at $200 billion, and large anything over $200 billion. After splitting the firms into their respective bins, we ran a Ridge Regression on our determinants for compensation (Independent Variables) against director/CEO total compensation (Dependent variable). We used GridSearchCV to optimize each of our models for the alpha and K values. After many iterations, the best_pipe function was used to pick the set of parameters that fit the data the best. 
 
 **Removed heading**
 
