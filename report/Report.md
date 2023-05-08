@@ -265,37 +265,36 @@ Despite optimizing our regression, the director model was unable to fit the firm
 __Board of Directors Results__
 
 Small bin size regression parameters:
-- K=79
-- Alpha=202
+- K = 79
+- Alpha = 202
 - R2 result: 0.469471
 
 Medium bin size regression parameters:
-- K=95
-- Alpha=100
+- K = 95
+- Alpha = 100
 - R2 result: 0.618721
 
 Large bin size regression parameters:
-- K=79
-- Alpha=0.0001
+- K = 79
+- Alpha = 0.0001
 - R2 result: 0.227747
 
 __CEO results __
 
 Small bin size regression parameters:
-- K =96
-- Alpha=0.01
+- K = 96
+- Alpha = 0.001
 - R2 result:0.731653
 
-
 Medium bin size regression parameters:
-- K=96 
-- Alpha=19
+- K = 19 
+- Alpha = 19
 - R2 result: 0.68396
 
 Large bin size regression parameters: (to prevent overfitting these variables were omitted for large bin size('total_curr','salary', 'bonus', 
         'stock_awards', 'option_awards', 'othcomp')
-- K=85
-- Alpha=559
+- K = 85
+- Alpha = 559
 - R2 result: 0.887815
 
 ------
