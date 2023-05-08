@@ -4,7 +4,7 @@
 Rha Overstreet, Alex Romanowski, Tobey Bill, Anna Harvey
 
 ## Project Description
-We are analyzing the relationship between firm performance and CEO/Board of Director Compensation. Our analysis includes companies from the S&P500, we then separated the firms based on market value. We then ran a Ridge regression to predict firm CEO/BOD over/under compensation. After predicting compensation we determined the relationship between compensation and firm performance. Firm performance was calculated using TobinsQ and a logistic regression to create a firm performance variable.     
+This project analyzes the relationship between firm performance and CEO/Board of Director Compensation. Our analysis includes companies from the S&P 500 separated into size categories based on market value. For each firm, we ran a Ridge regression to predict firm CEO/BOD over/under compensation percentages. After achieving this metric, we calculated a measure of firm performance using the coefficients of a linear regression as weights for each relevant variable. Once both over/under compensation and firm performance had been calculated for the firms in question, the two were correlated, plotted on a scatterplot, and then average firm performance was listed in comparison four cases of over/undercompensation.  
 
 ## Our Approach
 1. Research determinants of CEO and BOD compensation for our regressions
@@ -17,7 +17,7 @@ We are analyzing the relationship between firm performance and CEO/Board of Dire
 2. EDA has a mixture of different ipynb files that contributed to the monsterous cleaning. 
 3. Analysis And Regressions folder contains all of our work leading up to the results. 
 4. In results we have our final output pertaining to our hypothesis. 
-5. Report --> THIS IS OUR REPORT 
+5. Report: our report
 
 ## Link to project website
 __**[Project Website](https://tobeybill.github.io/TISATAFL/)**__
@@ -32,7 +32,8 @@ Sigo, Marxia Oli, Determinants of Firm Performance: A Subjective Model (August 1
 
 
 ## Packages
-```import pandas as pd
+```
+import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -45,7 +46,6 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import r2_score
 from df_after_transform import df_after_transform
-import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from ydata_profiling import ProfileReport
@@ -60,14 +60,15 @@ from sklearn.pipeline import make_pipeline, Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler, LabelEncoder
 from sklearn.linear_model import Lasso, Ridge
 from sklearn.feature_selection import SelectKBest, f_classif, VarianceThreshold
-set_config(display="diagram")
+import yfinance as yf
 ```
 ## Data Service
     - Wharton Research Data Services
 ### Databases
-    - Compustat
-    - Execucomp
-    - Center for Research and Security Prices (CRSP)
+1. [Compustat accounting variables](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/)
+1. Execucomp
+	1. [Director Compensation](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/execucomp/director-compensation/)
+	1. [CEO Compensation](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/execucomp/annual-compensation/)
 
 
 
