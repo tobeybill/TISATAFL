@@ -110,6 +110,8 @@ import yfinance as yf
 	1. [Director Compensation](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/execucomp/director-compensation/)
 	1. [CEO Compensation](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/execucomp/annual-compensation/)
 
-
+---
 
 # TISATAFL
+--- 
+![](https://media.giphy.com/media/3orieQOEvQJdEsnZy8/giphy.gif)
