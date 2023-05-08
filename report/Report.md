@@ -391,7 +391,8 @@ We found the opposite for directors, that there was very strong correlation betw
 
 <img src="/images/corr_BOD_graph.png?raw=true"/>
 
-Visually, it can be observed that there is a much larger scale for overcompensation on the part of the CEOs, wich an outlier being above 1600% of predicted pay. On the BOD side, a separate outlier sits at roughly 800% of predicted pay. Additionally, it appears that medium-sized firms are most responsible for CEO overpayment wheras smaller firms are more responsible for director overpayment. In both cases, firm performance for larger firms seems to be less volatile than that for the other two size categories.
+There is a larger scale for CEO compensation than director compensation with an outlier of CEO compensation above 1600% of predicted pay. On the BOD side, a separate outlier sits at roughly 800% of predicted pay. Additionally, it appears that medium-sized firms are responsible for the majority of CEO overpayment whereas smaller firms are more responsible for director overpayment. In both cases, firm performance for larger firms seems to be less volatile than that for the other two size categories. That said, it is possible that large firms are less volitile due to the determinants we picked. Because the accounting variables for large firms are so much greater than the other size firms, the model may have had more tolerance for change in CEO compensation.
+
 
 
 ### Case Analysis
