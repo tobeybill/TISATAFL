@@ -427,7 +427,7 @@ There is a larger scale for CEO compensation than director compensation with an 
 
 |Firm Size|Case| avg_perf_score | count |
 |---------|----|----------------|-------|
-| Small   | 1  |  -0.072387     | 5     |
+| Large   | 1  |  -0.072387     | 5     |
 |         | 2  |  -0.107360     | 13    |
 |         | 3  |  1.467393      | 16    |
 |         | 4  |  0.725534      | 28    |
@@ -435,7 +435,7 @@ There is a larger scale for CEO compensation than director compensation with an 
 |         | 2  |  0.386103      | 111   |
 |         | 3  |  0.113649      | 511   |
 |         | 4  |  0.558956      | 169   |
-| Large   | 1  |  0.352583      | 43    |
+| Small   | 1  |  0.352583      | 43    |
 |         | 2  |  0.010755      | 35    |
 |         | 3  |  -0.296914     | 94    |
 |         | 4  |  -0.35602      | 41    |
