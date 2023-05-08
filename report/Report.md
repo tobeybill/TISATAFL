@@ -420,7 +420,7 @@ There is a larger scale for CEO compensation than director compensation with an 
 |         | 3  |                |       |
 |         | 4  |                |       |
 
-Separating out our various firms in the above four cases, we found that large firms with an underpaid CEO and overpaid BOD perform the best and small firms with underpaid CEO and BOD perform the worst. It is also important to note that, for large firms, overpayment of the CEO results in poor performance while for the other two sizes it improves firm performance. For small firms especially, the overpayment of the CEO very heavily impacts the firm performance. 
+Separating out our various firms in the above four cases, we found that large firms with an underpaid CEO and overpaid BOD perform the best. Small firms with underpaid CEO and BOD perform the worst. It is also important to note that, for large firms, overpayment of the CEO results in poor performance while it improves firm performance for medium and small firms. Small firms had heavy positive impacts after overpaying their CEO's.
 
 ---
 
