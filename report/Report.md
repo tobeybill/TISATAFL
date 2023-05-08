@@ -390,17 +390,17 @@ After running the correlations between the overpayment variables and the firm pe
 
 |Firm Size|Correlation|
 |---------|-----------|
-| Small   |           |
-| Medium  |           |
-| Large   |           |
+| Small   | 0.225228  |
+| Medium  | 0.005446  |
+| Large   | -0.226134 |
 
 We found that there was very strong correlation between CEO overpayment and firm performance for small firms, and an equally as strong negative correlation for the larger firms. For those in the mid-size, there wasn't much change. 
 
 |Firm Size|Correlation|
 |---------|-----------|
-| Small   |           |
-| Medium  |           |
-| Large   |           |
+| Small   | -0.116239 |
+| Medium  | -0.026329 |
+| Large   | 0.131093  |
 
 We found the opposite for directors, that there was very strong correlation between BOD overpayment and firm performance for large firms but a negative correlation for overpayment for the small ones.
 
@@ -427,18 +427,18 @@ There is a larger scale for CEO compensation than director compensation with an 
 
 |Firm Size|Case| avg_perf_score | count |
 |---------|----|----------------|-------|
-| Small   | 1  |                |       |
-|         | 2  |                |       |
-|         | 3  |                |       |
-|         | 4  |                |       |
-| Medium  | 1  |                |       |
-|         | 2  |                |       |
-|         | 3  |                |       |
-|         | 4  |                |       |
-| Large   | 1  |                |       |
-|         | 2  |                |       |
-|         | 3  |                |       |
-|         | 4  |                |       |
+| Small   | 1  |  -0.072387     | 5     |
+|         | 2  |  -0.107360     | 13    |
+|         | 3  |  1.467393      | 16    |
+|         | 4  |  0.725534      | 28    |
+| Medium  | 1  |  0.041125      | 298   |
+|         | 2  |  0.386103      | 111   |
+|         | 3  |  0.113649      | 511   |
+|         | 4  |  0.558956      | 169   |
+| Large   | 1  |  0.352583      | 43    |
+|         | 2  |  0.010755      | 35    |
+|         | 3  |  -0.296914     | 94    |
+|         | 4  |  -0.35602      | 41    |
 
 Separating out our various firms in the above four cases, we found that large firms with an underpaid CEO and overpaid BOD perform the best. Small firms with underpaid CEO and BOD perform the worst. It is also important to note that, for large firms, overpayment of the CEO results in poor performance while it improves firm performance for medium and small firms. Small firms had heavy positive impacts after overpaying their CEO's.
 
