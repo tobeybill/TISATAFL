@@ -13,11 +13,48 @@ This project analyzes the relationship between firm performance and CEO/Board of
 4. Determine relationship between above results and firm performance
 
 ## File Directory and Interactions
-1. Input_data has all of the uncleaned WRDS data. This includes BOD, CEO, and Firm Data. 
-2. EDA has a mixture of different ipynb files that contributed to the monsterous cleaning. 
-3. Analysis And Regressions folder contains all of our work leading up to the results. 
-4. In results we have our final output pertaining to our hypothesis. 
-5. Report: our report
+**Steps to emulate findings**
+1. Run the creating_cleaning_df.ipynb file found in the cleaning folder.
+    - This file will clean and shape the data frames necessary for future use. 
+
+
+2. Run the adding_varsto_ceo.ipynb file found in the adding folder.
+    - This file will add the power and prestige variables used in the regressions later in the repository
+
+
+3. In the regression folder there are 5 files. The BOD_Optimization and CEO_Optimization files can be used to see our methodology to optimize our Ridge model. These files can also be used to substitute your own regression models.
+    - The 3 files to run in order to get our results are the small, medium, and large.ipynb. These files use our Ridge parameters to output our results. 
+    - The folder: Saved_dfs holds the regression predictions and the binned datasets.
+    
+
+
+4. In the results folder, run Firm_performance.ipynb first.
+    - Run Correlation Creation next.
+
+
+**Data folders and what they hold**
+1. inputs
+    - The inputs folder holds the uncleaned datasets that where pulled from WRDS.
+    
+
+2. outputs
+    - This folder is where the cleaned and modified datasets are created.
+
+
+3. Data descriptions
+    - This folder holds html files that visualize the data and their interactions.
+    - data_reports.ipynb is the file which can be used to re-create the EDA htmls.
+    - Firm_data_descriptions.csv holds variable descriptions
+    
+ 
+4. The saved_dfs in 3_regression
+    - This folder holds the prediction results used in the results files
+
+
+
+**Report**
+Our report folder holds our report and findings
+
 
 ## Link to project website
 __**[Project Website](https://tobeybill.github.io/TISATAFL/)**__
