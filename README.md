@@ -59,6 +59,9 @@ Our report folder holds our report and findings
 ## Link to project website
 __**[Project Website](https://tobeybill.github.io/TISATAFL/)**__
 
+## Link to project presentation
+__**[Project Presentation](https://docs.google.com/presentation/d/1QPhR5E__vT7tgivGgNYfhnt1yjnprXjheywIWayoJI4/edit?usp=sharing)**__
+
 ## Citations
 1.  Mustafa A. Dah, Melissa B. Frye, "Is board compensation excessive?", Journal of Corporate Finance, Volume 45, 2017, Pages 566-585, ISSN 0929-1199, https://doi.org/10.1016/j.jcorpfin.2017.06.001.
 	(https://www.sciencedirect.com/science/article/pii/S0929119917303589)
