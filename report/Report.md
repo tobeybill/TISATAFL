@@ -372,6 +372,7 @@ performance_score['Performance Score'] = performance_score.sum(axis=1)
 ```
 
 The weights used are reflected in the following graph:
+
 <img src="/images/weights_graph.png?raw=true"/>
 
 
