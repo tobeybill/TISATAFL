@@ -20,7 +20,7 @@ This study examines the impact of CEO and Director compensation on firm performa
 
 
 
-These cases were correlated with a firm performance variable that we created using determinants gathered from a literature search. For analysis, we split our dataset into three bins according to market size. Ultimately, our study found that large firms are negatively impacted by CEO and director overcompensation, medium and smaller firms are positively impacted by it, and smaller firms also have a negative average firm performance associated with underpayment of the CEO and both CEO and directors.
+These cases were correlated with a firm performance variable that we created using determinants gathered from a literature search. For analysis, we split our dataset into three bins according to market size. Ultimately, our study found that large firms are negatively impacted by CEO and director overcompensation, medium and smaller firms are positively impacted by it, and smaller firms also have a negative average firm performance associated with underpayment of just the CEO and of both CEO and directors.
 
 Regarding potential sources of error, the datasets gathered from WRDS had missing fields which required either dropping of NaN values in the set or imputing missing variables in our regressions. Further analysis should be done with a larger data set that spans a larger range of years. Note: In this study we used companies listed on the S&P 500.
 
@@ -52,7 +52,7 @@ This research prompted us to further explore these relationships and focus on th
 
 
 ## Data and Variables
-**We utilized the Wharton Research Data Services for our data sets.** All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm specific information came from Compustat. We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample comprised of firms in the S&P 500 from years 2010-2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's, the financial crisis in 2008/2009, and the impact COVID-19 had on the market.
+**We utilized the Wharton Research Data Services for our data sets.** All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm-specific information came from Compustat. We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample was comprised of firms in the S&P 500 from years 2010-2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's, the financial crisis in 2008/2009, and the impact COVID-19 had on the market in 2020 and beyond.
 
 
 ### BOD Compensation and Determinants
