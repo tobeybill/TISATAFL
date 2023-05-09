@@ -10,13 +10,13 @@
 
 This study examines the impact of CEO and Director compensation on firm performance. We conducted a regression analysis on a set of determinants derived from academic literature regarding C-suite and Director compensation to determine over or underpayment of these individuals. Our four cases of analysis and hypotheses for them are:
 
-1. **Both CEOs and directors are overcompensated:** Firm performance will suffer due to backscratching and underperforming executives
+1. **Both CEO and directors are overcompensated:** Firm performance will suffer due to backscratching and underperforming executives
 
 2. **The CEO is overcompensated and directors are undercompensated:** Firm performance will excel due to a more qualified CEO and strong influence over the board of directors
 
 3. **The CEO is undercompensated and directors are overcompensated:** Firm performance will suffer because the directors are self-serving and less motivated to replace the CEO in fear of losing their compensation
 
-4. **Both CEOs and directors are undercompensated:** Firm performance will excel due to strong firm governance, which prevents overcompensation
+4. **Both CEO and directors are undercompensated:** Firm performance will excel due to strong firm governance, which prevents overcompensation
 
 
 
@@ -69,14 +69,14 @@ The CEO variables were also lagged by one year and we determined that past compe
 
 ### Determinants of Firm Performance
 
-The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability performance, growth performance, market value performance of the firm, customer satisfaction, employee satisfaction, environmental performance, environmental audit performance, corporate governance performance, and social performance. Although this may seem exhaustive, the paper did not calculate any kind of firm performance measure. For our analysis, we focused on the profitability performance, growth performance, and market value performance due to their availability in the Compustat dataset and quantifiable nature that was necessary for the measure calculation. All of these determinants are later used to predict firm performance.
+The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability performance, growth performance, market value performance of the firm, customer satisfaction, employee satisfaction, environmental performance, environmental audit performance, corporate governance performance, and social performance. Although this may seem exhaustive, the paper did not calculate any kind of firm performance measure. For our analysis, we focused on the profitability performance, growth performance, and market value performance due to their availability in the Compustat dataset and their quantifiable nature that was necessary for the measure calculation. All of these determinants are later used to predict firm performance.
 
 
 ### Exploratory Data Analysis
 
 After querying the data from WRDS, we did an Exploratory Data Analysis (EDA) on our data frames. Our EDA leads us to dropping variables deemed unnecessary in our analysis, imputing data into missing or NaN data fields, and creating new variable identifiers. 
 
-The data sets that were queried from WRDS were very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data, we imputed values depending on the variable case. For the variables we did not create, we imputed missing values with that variable's mean (done according to market value bins). For example, the Small firms would not be imputed with the Large firms means. We had to normalize the variables we created as well. Some of the divisions resulted in NaN and 'inf' values. We understood that the NaN results came from dividing zero by a value and 'inf' was the result of dividing by zero. We imputed the NaN results to zero and capped the 'inf' results to the maximum value of that variable set. 
+The data sets that were queried from WRDS were very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data, we imputed values depending on the variable case. For the variables we did not create, we imputed missing values with that variable's mean (done according to market value bins). For example, the Small firms would not be imputed with the Large firms' means. We had to normalize the variables we created as well. Some of the divisions resulted in NaN and 'inf' values. We understood that the NaN results came from dividing zero by a value and 'inf' was the result of dividing by zero. We imputed the NaN results to zero and capped the 'inf' results to the maximum value of that variable set. 
 
 Out of the two CEO total compensation values, we kept the variable that used the Black Scholes Model to value the options held by the CEO (TDC1).
 
@@ -199,13 +199,13 @@ A majority of the prior research on executive compensation and firm performance 
 
 Four cases
 
-1)  CEOs and Directors are both overcompensated
+1)  CEO and Directors are both overcompensated
 
 2)  CEO is overcompensated and Directors are undercompensated
 
 3)  CEO is undercompensated and Directors are overcompensated
 
-4)  CEOs and Directors are both undercompensated
+4)  CEO and Directors are both undercompensated
 
 
 
@@ -289,7 +289,7 @@ Large bin size regression parameters: (to prevent overfitting these variables we
 
 ## Overpayment Predictions
 
-After fitting our models to the training set we predicted compensation on the firm years in our holdout data. After getting our predicted compensation values we created the our overcompensation variable.
+After fitting our models to the training set we predicted compensation on the firm years in our holdout data. After getting our predicted compensation values, we created the overcompensation variable.
 
 Overpayment = Actual Pay / Predicted Pay
 
@@ -377,6 +377,8 @@ Once the performance scores had been calculated, we correlated them with the ove
 
 Our final step was determining the average performance score for each firm year used in our analysis, firms listed in the S&P 500 from 2017 to 2019. Creating a table showing the average performance score within each case within each size category, we were able to gain insight on how firms of different sizes performed with over and under compensated executive management.
 
+The following code demonstrates how that was done:
+
 ```{python}
 def assignCase(df):
     df = df.dropna()
@@ -400,7 +402,7 @@ combined_avg_perf = combined_avg_perf.rename(columns={'Performance_Score':'avg_p
 ---
 ## Results
 
-After running the correlations between the compensation variables and the firm performance score for each case, we found the following results.
+After running the correlations of the compensation variables and the firm performance score for each case, we found the following results.
 
 ### Correlation Tables
 
@@ -431,7 +433,7 @@ We found a similar trend for directors but in the negative direction. There is a
 
 <img src="/images/corr_BOD_graph.png?raw=true"/>
 
-There is a larger scale for director compensation than there is for CEO compensation with an outlier of director compensation above 7000% of predicted pay. On the CEO side, a separate outlier sits at roughly 3000% of predicted pay. Additionally, it appears that medium-sized firms are responsible for the majority of director overpayment whereas larger firms are more responsible for CEO overpayment. In both cases, firm performance for smaller firms seems to be less volatile than that for the other two size categories. It is possible that this is due to the capital limitations of smaller firms that aren't faced by those of the larger sizes. Even when smaller firm executives are overpaid, it isn't by as great of an amount because the addiditonal capital required for that compensation is most likely necessary elsewhere.
+There is a larger scale for director compensation than there is for CEO compensation with an outlier of director compensation above 7000% of predicted pay. On the CEO side, a separate outlier sits at roughly 3000% of predicted pay. Additionally, it appears that medium-sized firms are responsible for the majority of director overpayment whereas larger firms are more responsible for CEO overpayment. In both cases, compensation values for smaller firms seems to be less volatile than that for the other two size categories. It is possible that this is due to the capital limitations of smaller firms that aren't faced by those of the larger sizes. Even when smaller firm executives are overpaid, it isn't by as great of an amount because the addiditonal capital required for that compensation is most likely necessary elsewhere.
 
 
 ### Case Analysis
