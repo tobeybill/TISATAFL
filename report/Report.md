@@ -472,13 +472,13 @@ Executive management compensation has been inflating at a rate not reflected in 
 
 Our results have supported our hypothesis in the following ways.
 
-1. **Both CEOs and directors are overcompensated:** Firm performance will suffer in large firms due to backscratching and underperforming executives, although performance is improved for mid-size and small firms.
+1. **Both CEO and directors are overcompensated:** Firm performance will suffer in large firms due to backscratching and underperforming executives, although performance is improved for mid-size and small firms.
 
 2. **The CEO is overcompensated and directors are undercompensated:** Firm performance will excel in mid-size and small firms due to a more qualified CEO and strong control over the board of directors, but will be hurt in large firms (relative to undercompensation of both).
 
 3. **The CEO is undercompensated and directors are overcompensated:** Firm performance will suffer heavily in small firms because the directors are self-serving and less motivated to replace the CEO in fear of losing their compensation. Performance improves in large and mid-size firms.
 
-4. **Both CEOs and directors are undercompensated:** Firm performance will excel in large and mid-size firms because the firm has strong governance to prevent overcompensation, but will suffer for the smaller-sized firms due to lack of adequate motivation.
+4. **Both CEO and directors are undercompensated:** Firm performance will excel in large and mid-size firms because the firm has strong governance to prevent overcompensation, but will suffer for the smaller-sized firms due to lack of adequate motivation.
 
 --- 
 ## Citations
