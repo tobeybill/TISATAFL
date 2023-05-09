@@ -44,7 +44,7 @@
 											<h2>Results</h2>
 										</div>							
 									</header>
-									<p>After running the correlations between the overpayment variables and the firm performance score for each case, we found the following results.</p>
+									<p>After running the correlations of the compensation variables and the firm performance score for each case, we found the following results.</p>
 									<hr />
 									<div class="title">
 										<h2>Correlation Tables</h2>
@@ -65,22 +65,22 @@
 												<tbody>
 													<tr>
 														<td>Small</td>
-														<td>0.225228</td>
+														<td>0.241048</td>
 													</tr>
 													<tr>
 														<td>Medium</td>
-														<td>0.005446</td>
+														<td>0.027822</td>
 													</tr>
 													<tr>
 														<td>Large</td>
-														<td>-.0226134</td>
+														<td>0.077771</td>
 													</tr>
 													
 												</tbody>
 												
 											</table>
 										</div>
-										<p>We found that there was very strong correlation between CEO overpayment and firm performance for small firms, and an equally as strong negative correlation for the larger firms. For those in the mid-size, there wasn't much change.</p>
+										<p>There is a stronger correlation between CEO overpayment and firm performance for small firms, but a much weaker one for medium and large ones. It can be inferred that CEO payment has a greater impact on the performance of these smaller firms because they are more volatile and having a good CEO will go further towards firm success.</p>
 									</div>
 									<div>
 										<div class="title">
@@ -101,18 +101,18 @@
 													</tr>
 													<tr>
 														<td>Medium</td>
-														<td>-0.026329</td>
+														<td>-0.047808</td>
 													</tr>
 													<tr>
 														<td>Large</td>
-														<td>0.131093</td>
+														<td>-0.027887</td>
 													</tr>
 													
 												</tbody>
 												
 											</table>
 										</div>
-										<p>We found the opposite for directors, that there was very strong correlation between BOD overpayment and firm performance for large firms but a negative correlation for overpayment for the small ones.</p>
+										<p>We found a similar trend for directors but in the negative direction. There is a strong negative correlation between BOD overpayment and firm performance for smaller firms and a weaker negative correlation for those of medium and large size. This further supports the idea that keeping a good CEO is far more important for smaller firms than for those of the larger two sizes.</p>
 									</div>
 									<hr />
 									<div>
@@ -120,9 +120,24 @@
 											<h2>Correlation Graphs</h2>
 											
 										</div>
-										<span class="image fit"><img src="images/corr_BOD_graph.png" alt="" /></span>
-										<span class="image fit"><img src="images/corr_CEO_graph.png" alt="" /></span>
-										<p>There is a larger scale for CEO compensation than director compensation with an outlier of CEO compensation above 1600% of predicted pay. On the BOD side, a separate outlier sits at roughly 800% of predicted pay. Additionally, it appears that medium-sized firms are responsible for the majority of CEO overpayment whereas smaller firms are more responsible for director overpayment. In both cases, firm performance for larger firms seems to be less volatile than that for the other two size categories. That said, it is possible that large firms are less volitile due to the determinants we picked. Because the accounting variables for large firms are so much greater than the other size firms, the model may have had more tolerance for change in CEO compensation.</p>
+										
+										
+										<div class="row gtr-uniform">
+											<div class="col-2">
+											</div>
+											<div class="col-7">
+												<span class="image fit"><img src="images/corr_ceo_graph.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="row gtr-uniform">
+											<div class="col-2">
+											</div>
+											<div class="col-7">
+												<span class="image fit"><img src="images/corr_BOD_graph.png" alt="" /></span>
+											</div>
+										</div>
+										
+										<p>There is a larger scale for director compensation than there is for CEO compensation with an outlier of director compensation above 7000% of predicted pay. On the CEO side, a separate outlier sits at roughly 3000% of predicted pay. Additionally, it appears that medium-sized firms are responsible for the majority of director overpayment whereas larger firms are more responsible for CEO overpayment. In both cases, compensation values for smaller firms seems to be less volatile than that for the other two size categories. It is possible that this is due to the capital limitations of smaller firms that aren't faced by those of the larger sizes. Even when smaller firm executives are overpaid, it isn't by as great of an amount because the addiditonal capital required for that compensation is most likely necessary elsewhere.</p>
 									</div>
 									<hr />
 									<div>
@@ -148,77 +163,79 @@
 															</thead>
 															<tbody>
 																<tr>
-																	<td>Small</td>
+																	<td>Large</td>
 																	<td>1</td>
-																	<td>-0.072387</td>
-																	<td>5</td>
+																	<td>0.520715</td>
+																	<td>31</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>2</td>
-																	<td>-0.107360</td>
-																	<td>13</td>
+																	<td>0.638213</td>
+																	<td>26</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>3</td>
-																	<td>1.467393</td>
-																	<td>16</td>
+																	<td>1.755433</td>
+																	<td>3</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>4</td>
-																	<td>0.725534</td>
-																	<td>28</td>
+																	<td>1.784764</td>
+																	<td>4</td>
 																</tr>
+																
 																<tr>
 																	<td>Medium</td>
 																	<td>1</td>
-																	<td>0.041125</td>
-																	<td>298</td>
+																	<td>0.298682</td>
+																	<td>583</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>2</td>
-																	<td>0.386103</td>
-																	<td>111</td>
+																	<td>0.151899</td>
+																	<td>149</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>3</td>
-																	<td>0.113649</td>
-																	<td>511</td>
+																	<td>0.054874</td>
+																	<td>237</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>4</td>
-																	<td>0.558956</td>
-																	<td>169</td>
+																	<td>0..078295</td>
+																	<td>124</td>
 																</tr>
 																<tr>
-																	<td>Large</td>
+																	<td>Small</td>
 																	<td>1</td>
-																	<td>0.352583</td>
-																	<td>43</td>
+																	<td>0.077480</td>
+																	<td>101</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>2</td>
-																	<td>0.010755</td>
-																	<td>35</td>
+																	<td>0.219309</td>
+																	<td>29</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>3</td>
-																	<td>-0.296914</td>
-																	<td>94</td>
+																	<td>-0.481463</td>
+																	<td>64</td>
 																</tr>
 																<tr>
 																	<td></td>
 																	<td>4</td>
-																	<td>-0.35602</td>
-																	<td>41</td>
+																	<td>-0.279931</td>
+																	<td>16</td>
 																</tr>
+																
 																
 															</tbody>
 															
@@ -261,7 +278,7 @@
 										</div>	
 										
 									</div>
-									<p>Separating out our various firms in the above four cases, we found that large firms with an underpaid CEO and overpaid BOD perform the best. Small firms with underpaid CEO and BOD perform the worst. It is also important to note that, for large firms, overpayment of the CEO results in poor performance while it improves firm performance for medium and small firms. Small firms had heavy positive impacts after overpaying their CEO's.</p>
+									<p>Separating out our various firm years in the above four cases, we found that large firms with both CEO and director underpayment perform the best, on average, in the years studied. These numbers are advised by a smaller sample size though. Small firms with underpaid CEO and overpayed BOD perform the worst. It is also important to note that, for large firms, overpayment of the CEO results in poorer performance while it improves firm performance for medium and small firms. Additionally, it is intriguing that smaller firms see a negative performance score when they are underpaying their CEOs. This further emphasizes the importance of generous CEO compensation on the part of firms at the smaller size. If those CEOs are underpaid, they leave, and that is incredibly detrimental to the firms they used to lead. For the larger and medium-sized firms, the effect of this potential turnover is far less evident. In fact, as previously mentioned, the larger firms actually benefit from undercompensation of their executives. Medium firms sit right in the middle, with slightly positive firm performance but not at the magnitude of the measures seen in the other two categories.</p>
 
 								</article>
 								<div id="main">
@@ -275,13 +292,13 @@
 											</header>
 											
 											
-											<p>Since the mid 20th century, CEO and director compensation has has ballooned and caught the attention of many. The drastic increase in CEO compensation has often called its legitimacy into question. Does paying the higherups oversized saleries really make an impact? We've found that, in certain cases, it does.</p>
+											<p>Executive management compensation has been inflating at a rate not reflected in worker salaries, traditional firm performance, and firm market performance. The drastic increase in executive compensation has often called the legitimacy of the impact these positions have on firm performance into question. Does paying executive management abnormally large salaries really make an impact? Through our study we have found that, in certain cases, it does.</p>
 											<p>Our results have supported our hypothesis in the following ways.</p>
 											<ol>
-												<li>Both CEOs and directors are overcompensated: Firm performance will suffer in large firms due to backscratching and underperforming executives, but is improved for mid-size and small firms.</li>
-												<li>The CEO is overcompensated and directors are undercompensated: Firm performance will excel in mid-size and small firms due to a more qualified CEO and strong controls over the board of directors, but will be hurt in large firms.</li>
-												<li>The CEO is undercompensated and directors are overcompensated: Firm performance will suffer in small firms because the directors are self serving and less motivated to replace the CEO in fear of loosing their compensation, but will improve in large and mid-size firms.</li>
-												<li>Both CEOs and directors are undercompensated: Firm performance will excel in large and mid-size firms because the firm has strong governance to prevent overcompensation, but will suffer for the smaller size firms due to lack of adequate motivation.</li>
+												<li><b>Both CEO and directors are overcompensated:</b> Firm performance will suffer in large firms due to backscratching and underperforming executives, although performance is improved for mid-size and small firms.</li>
+												<li><b>The CEO is overcompensated and directors are undercompensated:</b> Firm performance will excel in mid-size and small firms due to a more qualified CEO and strong control over the board of directors, but will be hurt in large firms (relative to undercompensation of both).</li>
+												<li><b>The CEO is undercompensated and directors are overcompensated: </b>Firm performance will suffer heavily in small firms because the directors are self-serving and less motivated to replace the CEO in fear of losing their compensation. Performance improves in large and mid-size firms.</li>
+												<li><b>Both CEO and directors are undercompensated:</b> Firm performance will excel in large and mid-size firms because the firm has strong governance to prevent overcompensation, but will suffer for the smaller-sized firms due to lack of adequate motivation.</li>
 											</ol>
 											<footer>
 												<ul class="actions">

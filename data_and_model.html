@@ -44,13 +44,13 @@
 											</div>
 											
 										</header>
-										<p>We utilized the Wharton Research Data Services for our data sets All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm specific information came from Compustat and CRSP. We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample size comprised of firms in the S&P500 from 2010 - 2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's and the impact of COVID on the market.</p>
+										<p>We utilized the Wharton Research Data Services for our data sets.  All data regarding director and CEO compensation and demographics came from Execucomp. Firm accounting variables and other firm-specific information came from Compustat. We cross referenced multiple studies to find determinants of CEO and director compensation as well as firm performance. Our sample was comprised of firms in the S&P 500 from years 2010-2019. We chose 2010-2019 to avoid the corporate scandals of the early 2000's, the financial crisis in 2008/2009, and the impact COVID-19 had on the market in 2020 and beyond.</p>
 										<hr />
 										<div class="title">
 											<h3> BOD Compensation and Determinants </h3>
 										</div>
-										<p>Director compensation was derived as their total compensation including cash, value of stock options and option awards, non-equity incentive plan compensation, change in pension value and nonqualified deferred compensation earnings, and all other compensation.</p>
-										<p>We used accounting based firm valuations and market performance as determinants for predicting Board of Directors compensation. The accounting variables and compensation variables (not including total compensation)are lagged one year, because we are assuming that current total compensation is impacted by previous years performance. The accounting metrics of a firm are resilient to equity market changes. These metrics focus on internal firm performance, which will reduce the impact a strong market position will have on predicted compensation. A strong market artificially inflates firm values, even if the firm is not doing well internally. We included market performance determinants in our analysis because BOD packages usually contain some equity incentive (Dah and Frye).</p>
+										<p>Director compensation was defined as their total compensation. This includes cash, value of stock options and option awards, non-equity incentive plan compensation, change in pension value and "nonqualified" deferred compensation earnings, and all other compensation.</p>
+										<p>We used accounting-based firm valuations and market performance as determinants for predicting Board of Director compensation. The accounting variables and compensation variables (not including total compensation) are lagged by one year because we are assuming that current total compensation is impacted by the previous years' performance. The accounting metrics of a firm are resilient to equity market changes because these metrics focus on internal firm performance, which will reduce the impact a strong market position will have on predicted compensation. A strong market artificially inflates firm values, even if the firm is not doing well internally. We included market performance determinants in our analysis because BOD packages usually contain some equity incentives as well (Dah and Frye).</p>
 										<hr />
 										
 										<div class="title">
@@ -62,12 +62,12 @@
 										<div class="title">
 											<h3> Determinants of Firm Performance </h3>
 										</div>
-										<p>The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability performance, growth performance, market value performance of the firm, customer satisfaction, employee satisfaction, environmental audit performance, corporate governance performance and social performance. Although this may seem exhaustive, the paper did not actually test any of these variables as controls. For our analysis, we focused on the profitability performance, growth performance, and market value performance due to their availability in the compustate dataset. All of these determinants are later used to predict firm performance.</p>
+										<p>The review written by Sigo explores a wide variety of contributing factors to firm performance: profitability performance, growth performance, market value performance of the firm, customer satisfaction, employee satisfaction, environmental performance, environmental audit performance, corporate governance performance, and social performance. Although this may seem exhaustive, the paper did not calculate any kind of firm performance measure. For our analysis, we focused on the profitability performance, growth performance, and market value performance due to their availability in the Compustat dataset and their quantifiable nature that was necessary for the measure calculation. All of these determinants are later used to predict firm performance.</p>
 										<hr />
 										<div class="title">
 											<h3> Exploratory Data Analysis </h3>
 											<p>After querying the data from WRDS, we did an Exploratory Data Analysis or EDA on our data frames. Our EDA leads us to dropping variables deemed unnecessary in our analysis, imputing data into missing or NaN data fields, and creating new variable identifiers.</p>
-											<p>The data sets that were queried from WRDS where very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data we imputed values depending on the variable case. For the variables we did not create, we imputed missing values with that variables mean. The imputed means where done according to market value bins. For Example, the Tiny firms would not be imputed with the Large firms means. We had to normalize the variables we created. Some of the division resulted in NaN and 'inf' values. We understood that the NaN results came from dividing zero and 'inf' was the result of dividing by zero. We imputed the NaN results with zero and capped the 'inf' results to the maximum value of that variable set.</p>
+											<p>The data sets that were queried from WRDS were very extensive. We did not have use for all of the variables in the data sets, and selected the ones we determined to be pertinent to our project based on the literature we read. We renamed variables to have more comprehensive labels. For missing data, we imputed values depending on the variable case. For the variables we did not create, we imputed missing values with that variable's mean (done according to market value bins). For example, the Small firms would not be imputed with the Large firms means. We had to normalize the variables we created as well. Some of the divisions resulted in NaN and 'inf' values. We understood that the NaN results came from dividing zero by a value and 'inf' was the result of dividing by zero. We imputed the NaN results to zero and capped the 'inf' results to the maximum value of that variable set. </p>
 											<p>Out of the two CEO total compensation values, we kept the variable that used the Black Scholes Model to value the options held by the CEO. (TDC1)</p>
 										</div>
 									</article>
@@ -219,13 +219,13 @@
 										<div class="title">
 											<h3> The Process</h3>
 										</div>
-										<p>Prior literature has individually examined the impact of Director compensation and CEO compensation on firm performance, but there are less studies that examine both variables together. Our research uses logistic regression to calculate an expected value for director and CEO compensation through their determinants while controlling for firm size and year. The expected value is then compared to the actual compensation to determine under or over compensation. These variables are used to create for different cases.</p>
+										<p>A majority of the prior research on executive compensation and firm performance has considered either CEO or Director compensation separately, they are not usually studied in tandem. This made our research unique. Our process uses a Ridge model to calculate an expected value for director and CEO compensation through their determinants while controlling for firm size and year. The expected value is then compared to the actual compensation to determine under or over compensation in that period. For both types of executives, we correlate this over/undercompensation variable to firm performance after accounting for the control variables we created. We then look at average performance present in firms within each of the four cases mentioned below.</p>
 										<ol>
-											<li>CEOs and Directors are both overcompensated.</li>
+											<li>CEO and Directors are both overcompensated.</li>
 											
 											<li>CEO is overcompensated and Directors are undercompensated.</li>
 											<li>CEO is undercompensated and Directors are overcompensated.</li>
-											<li>CEOs and Directors are both undercompensated.</li>
+											<li>CEO and Directors are both undercompensated.</li>
 										
 										</ol>
 										<p>These four cases are then correlated to firm performance after accounting for controls.</p>
@@ -243,7 +243,7 @@
 										</div>
 
 										<p>The regressions for director and CEO compensation were ran seperatley, but the overarching process is the same.</p>
-										<p>Through our research, we learned that firms of different sizes have varrying payout structures to their executives and directors. We split the firms into 3 different size categories to allow for individual treatment during the regressions. Small firms were catagorized with a maximum market cap at $10 billion, followed by medium at $200 billion, and large anything over $200 billion.</p>
+										<p>Through our research, we learned that firms of different sizes have varying payout structures for their executives. We split the firms into 3 different size categories to allow for individual treatment during the regressions. Small firms were categorized with a maximum market cap at $10 billion, followed by medium at $200 billion, and large anything over $200 billion. After splitting the firms into their respective bins, we ran a Ridge Regression on our determinants for compensation (Independent Variables) against director/CEO total compensation (Dependent variable). We used GridSearchCV to optimize each of our models with the optimal alpha and K values. After many iterations, the best_pipe function was used to pick the set of parameters that fit the data the best. These parameters were then loaded into a file we had created for each firm size. </p>
 										<p>After splitting the firms in their respective bins, we ran a Ridge Regression on our determinates for compensation (Independent Variables) against director/CEO total compensation (Dependent variable).</p>
 										<p>We used GridSearchCV to optimized each our models for the alpha and K value. After many iterations, the best_alpha function was used to pick the set of parameters that fit the data the best.</p>
 										
@@ -277,7 +277,7 @@ results = grid_search.fit(X_train, y_train)
 											
 												
 										
-										<p>This above code was used to start finding the applicable alpha for each group. </p>
+										<p>This code was used to start finding the applicable alpha for each group. </p>
 										<p>Despite optimizing our regression, the director model was unable to fit the firms in the "huge" bin within any degree of accuracy. This suggests that different determinants govern director compensation at giant firms. If we were to re-run the analysis, we would do more research to find different determinants. For the time being, we decided to omit the data because no meaningful predictions could be made.</p>
 										<p></p>
 										<div class="row gtr-uniform">
@@ -355,7 +355,7 @@ results = grid_search.fit(X_train, y_train)
 													</table>
 											</div>
 										</div>
-										
+										<p>To prevent overfitting these variables were omitted for large bin size: ['total_curr','salary', 'bonus', 'stock_awards', 'option_awards', 'othcomp']</p>
 										
 										
 										
@@ -365,7 +365,7 @@ results = grid_search.fit(X_train, y_train)
 												<h3> Overpayment Predictions</h3>
 											</div>
 	
-											<p>Once we fit the models to the training data set, we used them to predict compensation for our holdout data. That provided us with a predicted compensation. We used this variable to create an overpayment variable.</p>
+											<p>After fitting our models to the training set we predicted compensation on the firm years in our holdout data. After getting our predicted compensation values, we created the overcompensation variable.</p>
 											<p> Overpayment = Actual Pay / Predicted Pay </p>
 											<p>The following code for the CEO payment in small firm sizes was repeated for medium and large firms and all three sizes for director payment</p>
 											<pre>
@@ -387,7 +387,7 @@ small_ceo_df['over_under_comp'] = small_ceo_df['tdc1']/pred_small_ceo_df['predic
 											<div class="title">
 												<h3> Firm Performance Score</h3>
 											</div>
-											<p>We needed a measure of performance to determine the effects of compensation on it. Based on our initial research, we were originally going to use Tobin's Q as our measure, but reviewing <i>Determinants of Firm Performance: A Subjective Model (Sigo, 2020)</i> prompted us to take the analysis one step further. Because the review outlines many different factors that impact firm performance, we decided to create our own performance score for each firm in each year and compare that score to the over/underperforming variables we had calculated previously. The process for doing that involved the following:</p>
+											<p>We needed a measure of firm performance to determine how over- and undercompensation affects it. Based on our initial research, we were originally going to use Tobin's Q as our measure, but reviewing *Determinants of Firm Performance: A Subjective Model (Sigo, 2020)* prompted us to take the analysis one step further. Because the review outlines many different factors that impact firm performance, we decided to create our own performance score for each firm in each year and compare that score to the compensation variables we had calculated previously. The process for doing that involved the following:</p>
 											<ol>
 												<li>Determining relevant measures to firm performance (see firm performance variables above)</li>
 													<ol>
@@ -396,20 +396,21 @@ small_ceo_df['over_under_comp'] = small_ceo_df['tdc1']/pred_small_ceo_df['predic
 													
 												<li>Pulled neccessary accounting variables from Compustat Annual Fundamentals dataset</li>
 												<li>Created methods to calculate the measures from the accounting variables</li>
-												<li>Created a dataframe that contained each (Firm, Year) and its firm performance measures (calculated by applying the previously-created methods to each firm's accounting variables in that year)</li>
+												<li>Created a dataframe that contained each (Firm, Year) and its firm performance metrics (calculated by applying the previously-created functions to each firm's accounting variables in that year)</li>
 													<ol>
 														<li>For measures such as stock price performance and volatility, data was pulled from Yahoo Finance</li>
 													</ol>
 												<li>Assign weights to each of the measures for the overall performance score calculation</li>
 													<ol>
 														<li>We ran a linear regression to fit the determinants of firm performance to Tobin's Q, often considered an indicator of firm performance</li>
-														<li>Once the regression was fit, we utilized the independent variable coefficients of the regression as our weights</li>
+														<li>Once the regression was fit, we utilized a normalized version of the independent variable coefficients of the regression as our weights</li>
 													</ol>
 												<li>Calculate performance score for each (Firm, Year)</li>
-													</ol>
+													<ol>
 														<li>Using <code>StandardScaler()</code>, data is standardized by removing the mean and scaling to unit variance</li>
-														<li>New values are multiplied by their corresponding weights, then summed by row to determine overall score</li>
+														<li>New values are multiplied by their corresponding column weights, then rows are summed to determine overall score</li>
 													</ol>
+													
 											</ol>
 											
 													<pre>	
@@ -462,8 +463,44 @@ performance_score['Performance Score'] = performance_score.sum(axis=1)
 												</pre>
 												
 											
-											<p>Once the score is calculated for each firm in our prediction years they were correlated with the over/undercompensating variable for the same (Firm, Year). The relationship was also graphed for each firm size, both for CEOs and directors.</p>
-											<p>Lastly, we determined the average performance score present for firms within each case out of those outlined in the abstract. As discussed below, this provided us insight into how firms of each size fared with over and undercompensation of their CEOs and directors.</p>
+											<div>
+												<p>The weights used are reflected in the following graph:</p>
+												<div class="row gtr-uniform">
+													<div class="col-2">
+													</div>
+													<div class="col-7">
+														<span class="image fit"><img src="images/weights_graph.png" alt="" /></span>
+													</div>
+												</div>
+												
+											</div>
+											<div>
+												<p>As mentioned above, these were determined by running a linear regression and then scaling the resulting independent variable coefficients by absolute value so that they summed to 1.</p>
+												<p>Once the performance scores had been calculated, we correlated them with the over/undercompensation variables for each firm year, grouping by size category. The relationship was then graphed on a scatterplot for each of the size bins for both CEOs and Directors.</p>
+												<p>Our final step was determining the average performance score for each firm year used in our analysis, firms listed in the S&P 500 from 2017 to 2019. Creating a table showing the average performance score within each case within each size category, we were able to gain insight on how firms of different sizes performed with over and under compensated executive management.</p>
+												<p>The following code demonstrates how that was done:</p>
+											</div>
+										<pre>
+											<code>
+def assignCase(df):
+    df = df.dropna()
+    cases = [
+        (df['over_under_ceo'] >= 1) & (df['over_under_bod'] >= 1), # Case 1
+        (df['over_under_ceo'] >= 1) & (df['over_under_bod'] <= 1), # Case 2
+        (df['over_under_ceo'] <= 1) & (df['over_under_bod'] >= 1), # Case 3
+        (df['over_under_ceo'] <= 1) & (df['over_under_bod'] <= 1) # Case 4
+    ]
+    names = ['Case 1', 'Case 2', 'Case 3', 'Case 4']
+    df['Case'] = np.select(cases, names, default = np.nan)
+    return df
+    
+combined_bod_ceo = pd.concat([small_bod_ceo, med_bod_ceo, large_bod_ceo], axis=0)
+combined_bod_ceo = assignCase(combined_bod_ceo)
+
+combined_avg_perf = combined_bod_ceo.groupby(['Firm Size', 'Case']).agg({'Performance_Score': 'mean', 'Case': 'size'})
+combined_avg_perf = combined_avg_perf.rename(columns={'Performance_Score':'avg_perf_score','Case':'count'})
+											</code>
+										</pre>
 										</div>
 										
 										<footer>
